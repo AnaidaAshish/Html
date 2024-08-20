@@ -696,10 +696,9 @@
       .fourth_kid_two_p {
         display: flex;
         align-items: center;
-
         border: 1px solid black;
         border-radius: 14px;
-        height: 25px;
+        height: 35px;
         color: black;
         width: 210px;
         padding: 2px 0 2px 6px;
@@ -708,7 +707,8 @@
         border: 2px solid #177c94;
       }
       .fourth_span_one {
-        font-size: 14px;
+        /* border: 1px solid yellow; */
+        font-size: 13px;
         font-weight: 400;
         line-height: 19px;
         color: black;
@@ -892,18 +892,28 @@
       }
 
       /* products card section*/
+      .product_in_row{
+        margin-top: 30px;
+        border-top:  2px solid #d0d0d0;
+        border-bottom:  2px solid #d0d0d0;
+      }
       #productsParent {
         width: 100%;
-        /* border: 5px solid red; */
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
       }
+      #productCard_Heading{
+        margin: 20px 0 5px 30px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 32px;
+        color: rgb(51, 51, 51)
+      }
       .productCard {
-        border: 1px solid rgb(215, 215, 215);
-        height: 566px;
-        width: 19%;
-        margin-bottom: 14px;
+        height: 390px;
+        width: 12%;
+        margin: 14px 0 14px 0;
         border-radius: 10px;
       }
 
@@ -921,28 +931,34 @@
         height: 90%;
       }
       .proName {
+        /* border: 1px solid green; */
         padding: 10px;
         padding-bottom: 4px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #378f9f;
       }
       .ratingDiv {
+        /* border: 1px solid green;  */
         display: flex;
         padding: 10px;
         padding-top: 0px;
         padding-bottom: 0px;
+      }
+      .ratingDiv span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
       }
       .col-yellow {
         color: #febd69;
       }
       .ratingDiv p {
         color: #387689;
-        font-size: 16px;
-      }
-      .buyHistory {
-        padding: 10px;
-        padding-top: 0px;
         font-size: 14px;
-        color: rgb(109, 109, 109);
       }
+
       .priceDiv {
         display: flex;
         padding: 10px;
@@ -965,28 +981,24 @@
         text-decoration: line-through;
       }
       .offer {
-        padding: 10px;
+        /* padding: 10px; */
         padding-top: 0px;
-        font-size: 14px;
-        padding-bottom: 0px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 20px;
+        margin-right: 10px;
+        color: rgb(204, 12, 57);
       }
-      .emi {
-        padding: 10px;
-        padding-top: 0px;
-        font-size: 14px;
-        color: rgb(109, 109, 109);
+      .price_range {
+        display: flex;
       }
-      .delivery {
-        padding: 10px;
-        padding-top: 0px;
-        font-size: 14px;
+      .price {
+        /* border: 1px solid yellow; */
+        font-size: 21px;
+        font-weight: 400;
+        line-height: normal;
+        color: rgb(15, 17, 17);
       }
-      .install {
-        padding: 10px;
-        font-size: 14px;
-        padding-top: 0px;
-      }
-
     </style>
   </head>
   <body>
@@ -1488,261 +1500,240 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
       </div>
 
       <!-- product card section -->
-      <div id="productsParent">
-        <div class="productCard">
-          <div class="imgCard">
-            <img
-              class="h-w-100"
-              alt="Ref"
-              src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
-            />
-          </div>
-          <p class="proName">
-            Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
-            Refrigerator
-          </p>
-          <div class="ratingDiv">
-            <div>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined"> arrow_drop_down </span>
+       <div class=" product_in_row"> 
+        <p id="productCard_Heading">Explore more from Whirlpool</p>
+      
+        <div id="productsParent">
+       
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
+              />
             </div>
-            <p>5,344</p>
-          </div>
-          <p class="buyHistory">1K+ bought in past month</p>
-          <div class="priceDiv">
-            <span class="material-symbols-outlined"> currency_rupee </span>
-            <p>16,790</p>
-            <p>M.R.P: <span>₹22,999</span></p>
-          </div>
-          <p class="offer">(27% off)</p>
-          <p class="emi">Save extra with No Cost EMI</p>
-          <p class="delivery">
-            FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
-          </p>
-          <p class="install">Service: Installation</p>
-        </div>
-        <div class="productCard">
-          <div class="imgCard">
-            <img
-              class="h-w-100"
-              alt="Ref"
-              src="https://m.media-amazon.com/images/I/51FJ-6IDORL._AC_UL320_.jpg"
-            />
-          </div>
-          <p class="proName">
-            Haier 165 L, 1 Star, Direct-Cool Single Door Refrigerator
-            HED-171RS-P, Red Steel
-          </p>
-          <div class="ratingDiv">
-            <div>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined"> arrow_drop_down </span>
+            <p class="proName">
+              Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
+              Refrigerator
+            </p>
+            <div class="ratingDiv">
+              <div>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </div>
+              <p>5,344</p>
             </div>
-            <p>5,344</p>
-          </div>
-          <p class="buyHistory">1K+ bought in past month</p>
-          <div class="priceDiv">
-            <span class="material-symbols-outlined"> currency_rupee </span>
-            <p>16,790</p>
-            <p>M.R.P: <span>₹22,999</span></p>
-          </div>
-          <p class="offer">(27% off)</p>
-          <p class="emi">Save extra with No Cost EMI</p>
-          <p class="delivery">
-            FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
-          </p>
-          <p class="install">Service: Installation</p>
-        </div>
-        <div class="productCard">
-          <div class="imgCard">
-            <img
-              class="h-w-100"
-              alt="Ref"
-              src="https://m.media-amazon.com/images/I/613URtMJwZL._AC_UL320_.jpg"
-            />
-          </div>
-          <p class="proName">
-            Godrej 564 L Multi Air Flow System, Frost Free Side-By-Side
-            Refrigerator
-          </p>
-          <div class="ratingDiv">
-            <div>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined"> arrow_drop_down </span>
+  
+            <div class="priceDiv">
+              <p class="offer">-27%</p>
+              <div class="price_range">
+                <span class="material-symbols-outlined"> currency_rupee </span>
+                <p class="price">16,790</p>
+              </div>
             </div>
-            <p>5,344</p>
           </div>
-          <p class="buyHistory">1K+ bought in past month</p>
-          <div class="priceDiv">
-            <span class="material-symbols-outlined"> currency_rupee </span>
-            <p>60,600</p>
-            <p>M.R.P: <span>₹95,000</span></p>
-          </div>
-          <p class="offer">(36% off)</p>
-          <p class="emi">Save extra with No Cost EMI</p>
-          <p class="delivery">
-            FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
-          </p>
-          <p class="install">Service: Installation</p>
-        </div>
-        <div class="productCard">
-          <div class="imgCard">
-            <img
-              class="h-w-100"
-              alt="Ref"
-              src="https://m.media-amazon.com/images/I/51rI+jSqx5L._AC_UL320_.jpg"
-            />
-          </div>
-          <p class="proName">
-            <a href="fridge.html"
-              >Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator</a
-            >
-          </p>
-          <div class="ratingDiv">
-            <div>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined"> arrow_drop_down </span>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/51FJ-6IDORL._AC_UL320_.jpg"
+              />
             </div>
-            <p>5,344</p>
-          </div>
-          <p class="buyHistory">1K+ bought in past month</p>
-          <div class="priceDiv">
-            <span class="material-symbols-outlined"> currency_rupee </span>
-            <p>12,590</p>
-            <p>M.R.P: <span>₹15,400</span></p>
-          </div>
-          <p class="offer">(18% off)</p>
-          <p class="emi">Save extra with No Cost EMI</p>
-          <p class="delivery">
-            FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
-          </p>
-          <p class="install">Service: Installation</p>
-        </div>
-        <div class="productCard">
-          <div class="imgCard">
-            <img
-              class="h-w-100"
-              alt="Ref"
-              src="https://m.media-amazon.com/images/I/51DWwMapWxL._AC_UL320_.jpg"
-            />
-          </div>
-          <p class="proName">
-            Godrej 180 L 2 Star Advanced Capillary Technology,Single Door
-            Refrigerator
-          </p>
-          <div class="ratingDiv">
-            <div>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined"> arrow_drop_down </span>
+            <p class="proName">
+              Haier 165 L, 1 Star, Direct-Cool Single Door Refrigerator
+              HED-171RS-P, Red Steel
+            </p>
+            <div class="ratingDiv">
+              <div>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </div>
+              <p>5,344</p>
             </div>
-            <p>1,390</p>
-          </div>
-          <p class="buyHistory">1K+ bought in past month</p>
-          <div class="priceDiv">
-            <span class="material-symbols-outlined"> currency_rupee </span>
-            <p>12,690</p>
-            <p>M.R.P: <span>17,500</span></p>
-          </div>
-          <p class="offer">(27% off)</p>
-          <p class="emi">Save extra with No Cost EMI</p>
-          <p class="delivery">
-            FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
-          </p>
-          <p class="install">Service: Installation</p>
-        </div>
-        <div class="productCard">
-          <div class="imgCard">
-            <img
-              class="h-w-100"
-              alt="Ref"
-              src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
-            />
-          </div>
-          <p class="proName">
-            Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
-            Refrigerator
-          </p>
-          <div class="ratingDiv">
-            <div>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined"> arrow_drop_down </span>
+  
+            <div class="priceDiv">
+              <p class="offer">-20%</p>
+              <div class="price_range">
+                <span class="material-symbols-outlined"> currency_rupee </span>
+                <p class="price">16,790</p>
+              </div>
             </div>
-            <p>5,344</p>
           </div>
-          <p class="buyHistory">1K+ bought in past month</p>
-          <div class="priceDiv">
-            <span class="material-symbols-outlined"> currency_rupee </span>
-            <p>16,790</p>
-            <p>M.R.P: <span>₹22,999</span></p>
-          </div>
-          <p class="offer">(27% off)</p>
-          <p class="emi">Save extra with No Cost EMI</p>
-          <p class="delivery">
-            FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
-          </p>
-          <p class="install">Service: Installation</p>
-        </div>
-        <div class="productCard">
-          <div class="imgCard">
-            <img
-              class="h-w-100"
-              alt="Ref"
-              src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
-            />
-          </div>
-          <p class="proName">
-            Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
-            Refrigerator
-          </p>
-          <div class="ratingDiv">
-            <div>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined"> arrow_drop_down </span>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/613URtMJwZL._AC_UL320_.jpg"
+              />
             </div>
-            <p>5,344</p>
+            <p class="proName">
+              Godrej 564 L Multi Air Flow System, Frost Free Side-By-Side
+              Refrigerator
+            </p>
+            <div class="ratingDiv">
+              <div>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </div>
+              <p>5,344</p>
+            </div>
+  
+            <div class="priceDiv">
+              <p class="offer">-29%</p>
+              <div class="price_range">
+                <span class="material-symbols-outlined"> currency_rupee </span>
+                <p class="price">26,790</p>
+              </div>
+            </div>
           </div>
-          <p class="buyHistory">1K+ bought in past month</p>
-          <div class="priceDiv">
-            <span class="material-symbols-outlined"> currency_rupee </span>
-            <p>16,790</p>
-            <p>M.R.P: <span>₹22,999</span></p>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                style="width: 100%"
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/31ZknvzjEkL._AC_UF480,480_SR480,480_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Whirlpool 192 L 3 Star Vitamagic PRO Direct-Cool Single Door
+              Refrigerator 215 VITA...
+            </p>
+            <div class="ratingDiv">
+              <div>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </div>
+              <p>1,868</p>
+            </div>
+            <div class="priceDiv">
+              <p class="offer">-22%</p>
+              <div class="price_range">
+                <span class="material-symbols-outlined"> currency_rupee </span>
+                <p class="price">16,290</p>
+              </div>
+            </div>
           </div>
-          <p class="offer">(27% off)</p>
-          <p class="emi">Save extra with No Cost EMI</p>
-          <p class="delivery">
-            FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
-          </p>
-          <p class="install">Service: Installation</p>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/51DWwMapWxL._AC_UL320_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Godrej 180 L 2 Star Advanced Capillary Technology,Single Door
+              Refrigerator
+            </p>
+            <div class="ratingDiv">
+              <div>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </div>
+              <p>1,390</p>
+            </div>
+  
+            <div class="priceDiv">
+              <p class="offer">-27%</p>
+              <div class="price_range">
+                <span class="material-symbols-outlined"> currency_rupee </span>
+                <p class="price">16,790</p>
+              </div>
+            </div>
+          </div>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                style="width: 100%"
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/41acRGP2cNL._AC_UF480,480_SR480,480_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Whirlpool 215 L Frost Free Triple-Door Refrigerator FP 223D PROTTON
+              ROY…
+            </p>
+            <div class="ratingDiv">
+              <div>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </div>
+              <p>4,709</p>
+            </div>
+  
+            <div class="priceDiv">
+              <p class="offer">-31%</p>
+              <div class="price_range">
+                <span class="material-symbols-outlined"> currency_rupee </span>
+                <p class="price">24,690</p>
+              </div>
+            </div>
+          </div>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                style="width: 100%"
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/41FhLY78FnL._AC_UF480,480_SR480,480_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Whirlpool 235 L (253D) Frost Free Triple-Door Refrigerator FP 253D
+              PROTTON ROY ART...
+            </p>
+            <div class="ratingDiv">
+              <div>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </div>
+              <p>4,299</p>
+            </div>
+  
+            <div class="priceDiv">
+              <p class="offer">-31%</p>
+              <div class="price_range">
+                <span class="material-symbols-outlined"> currency_rupee </span>
+                <p class="price">26,690</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      
     </div>
   </body>
 </html>
