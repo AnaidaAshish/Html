@@ -37,7 +37,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -531,15 +538,15 @@
         margin-top: 5px;
         margin-left: 12px;
         border: 1px solid black;
-        border-radius: 8px;
+        border-radius: 12px;
       }
       .first_left_div img:hover {
-        border: 2px solid cyan;
+        border: 5px double #007185;
       }
       .fridge_img_div {
-        border: 1px solid rebeccapurple;
+        /* border: 1px solid rebeccapurple; */
         background-color: #fff;
-        width: 30%;
+        width: 36%;
         min-height: 500px;
       }
       .fridge_img_div span {
@@ -548,8 +555,11 @@
       }
       .fridge_img_div img {
         /* max-width: 400px; */
-        width: 100%;
-        max-height: 490px;
+        width: 570px;
+        max-height: 120%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
       }
       .fridge_img_div p {
         text-align: center;
@@ -561,7 +571,7 @@
       }
       .fridge_information {
         /* border: 1px solid yellow; */
-        width: 40%;
+        width: 35%;
       }
       .fridge_info_heading {
         font-family: Arial, Helvetica, sans-serif;
@@ -647,8 +657,9 @@
         border: 2px solid #d9dcdc;
         border-radius: 10px;
         width: 16%;
-        height: 100%;
+        height: 612px;
         justify-content: space-around;
+        margin-bottom: 10px;
       }
       .fourth_kid_one {
         padding: 10px 10px;
@@ -741,21 +752,20 @@
         justify-content: space-evenly;
         margin-left: 5px;
       }
-      li{
+      li {
         list-style-type: none;
       }
-      #Quantity_dropdown{
+      #Quantity_dropdown {
         margin-left: 10px;
         color: black;
         /* border: 1px solid blue; */
       }
-      #add_to_cart{
+      #add_to_cart {
         margin-left: 20px;
         justify-content: space-around;
         align-items: center;
-        
       }
-      .add_to_cart{
+      .add_to_cart {
         font-size: 14px;
         font-weight: 400;
         line-height: 19px;
@@ -770,14 +780,213 @@
         background-color: #ffd814;
         border-radius: 16px;
       }
-      .secure_transaction{
-        border: 1px solid blue;
+      .secure_transaction {
+        /* border: 1px solid blue; */
+        margin: 10px 0 10px 10px;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
         font-size: 14px;
         font-weight: 400;
       }
+      .secure_transaction > p {
+        margin: 0 0 10px 10px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+      #add_to_wishlist {
+        display: flex;
+        margin-top: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 244px;
+        height: 25px;
+        padding-left: 15px;
+        align-items: center;
+      }
+      #add_to_wishlist > p {
+        font-size: 13px;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 29px;
+      }
+
+      .brand-snapshot-badge-space {
+        margin-right: 4px;
+      }
+      img {
+        vertical-align: top;
+      }
+      img {
+        max-width: 100%;
+        border: 0;
+      }
+      * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .brand-snapshot-badge-space > img {
+        height: 24px;
+        aspect-ratio: auto 81 / 24;
+        width: 81px;
+      }
+      img {
+        overflow-clip-margin: content-box;
+        overflow: clip;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        margin: 20px 0 20px 0;
+      }
+      .brand p {
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        line-height: 24px;
+        color: rgb(15, 17, 17);
+      }
+      .tick_p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(15, 17, 17);
+      }
+      #top_brands_section {
+        margin-left: 30px;
+        display: flex;
+        /* border: 1px solid red; */
+      }
+      .highly_rated_for_customers p {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: rgb(15, 17, 17);
+        line-height: 20px;
+        margin: 20px;
+      }
+      #line_seperaation {
+        margin: 20px 20px 0 20px;
+        border-left: 2px solid#d3d3d3;
+      }
+      #recommend {
+        display: flex;
+        align-items: center;
+      }
+      .inside_recommend {
+        background-color: #f3f3f3;
+        display: flex;
+        align-items: center;
+        margin: 10px 5px 10px 20px;
+        height: 40px;
+        /* border: 1px solid black; */
+      }
+      .inside_recommend_p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(15, 17, 17);
+      }
+
+      /* products card section*/
+      #productsParent {
+        width: 100%;
+        /* border: 5px solid red; */
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .productCard {
+        border: 1px solid rgb(215, 215, 215);
+        height: 566px;
+        width: 19%;
+        margin-bottom: 14px;
+        border-radius: 10px;
+      }
+
+      .imgCard {
+        width: 100%;
+        height: 54%;
+        display: flex;
+        justify-content: center;
+        background-color: #f7f7f7;
+        border-radius: 10px;
+      }
+      .h-w-100 {
+        padding-top: 24px;
+        width: 42%;
+        height: 90%;
+      }
+      .proName {
+        padding: 10px;
+        padding-bottom: 4px;
+      }
+      .ratingDiv {
+        display: flex;
+        padding: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+      .col-yellow {
+        color: #febd69;
+      }
+      .ratingDiv p {
+        color: #387689;
+        font-size: 16px;
+      }
+      .buyHistory {
+        padding: 10px;
+        padding-top: 0px;
+        font-size: 14px;
+        color: rgb(109, 109, 109);
+      }
+      .priceDiv {
+        display: flex;
+        padding: 10px;
+        padding-top: 0px;
+        padding-bottom: 2px;
+      }
+      .priceDiv span {
+        font-size: 14px;
+        color: black;
+      }
+      .priceDiv p:nth-child(2) {
+        font-size: 24px;
+      }
+      .priceDiv p:nth-child(3) {
+        font-size: 12px;
+        color: rgb(109, 109, 109);
+      }
+      .priceDiv p:nth-child(3) span {
+        color: rgb(109, 109, 109);
+        text-decoration: line-through;
+      }
+      .offer {
+        padding: 10px;
+        padding-top: 0px;
+        font-size: 14px;
+        padding-bottom: 0px;
+      }
+      .emi {
+        padding: 10px;
+        padding-top: 0px;
+        font-size: 14px;
+        color: rgb(109, 109, 109);
+      }
+      .delivery {
+        padding: 10px;
+        padding-top: 0px;
+        font-size: 14px;
+      }
+      .install {
+        padding: 10px;
+        font-size: 14px;
+        padding-top: 0px;
+      }
+
     </style>
   </head>
   <body>
@@ -929,7 +1138,6 @@
         <div class="fridge_img_div">
           <span class="material-symbols-outlined"> ios_share </span>
           <img
-            style="border: 1px solid orangered"
             src="https://m.media-amazon.com/images/I/51W0opp83WL._SX679_.jpg"
             alt="Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator"
           />
@@ -952,10 +1160,10 @@
           </p>
           <span style="align-items: center; display: flex"
             ><span style="font-size: 14px">4.1</span>
-            <span class="material-symbols-outlined"> star </span>
-            <span class="material-symbols-outlined"> star </span>
-            <span class="material-symbols-outlined"> star </span>
-            <span class="material-symbols-outlined"> star </span>
+            <span class="material-symbols-outlined , col-yellow"> star </span>
+            <span class="material-symbols-outlined , col-yellow"> star </span>
+            <span class="material-symbols-outlined , col-yellow"> star </span>
+            <span class="material-symbols-outlined , col-yellow"> star </span>
             <span class="material-symbols-outlined"> star </span>
             <span class="material-symbols-outlined"> keyboard_arrow_down </span>
             <span style="color: #379bc0; font-size: 14px"
@@ -1189,37 +1397,350 @@
               In stock
             </p>
             <div>
-            <span style="font-size: 12px;color: black;"><pre style="margin-top: 10px;">Ships from &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amazon</span></pre>
+              <span style="font-size: 12px; color: black">
+                <pre style="margin-top: 10px">
+Ships from &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amazon</pre
+                >
+              </span>
             </div>
             <div>
-                <span style="font-size: 12px;color: black;">
-                  <pre style="margin:10px 0 10px 0;">Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
+              <span style="font-size: 12px; color: black">
+                <pre style="margin: 10px 0 10px 0">
+Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
                        ELECTRONICS PRIVATE
-                       LIMITED</pre>
+                       LIMITED</pre
+                >
               </span>
             </div>
           </div>
           <div id="Quantity_dropdown">
-          <label for="product_quantity">Quantity:</label>
-          <select name="product_quantity" id="product_quantity">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
+            <label for="product_quantity">Quantity:</label>
+            <select name="product_quantity" id="product_quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div id="add_to_cart">
+            <p class="add_to_cart">Add to Cart</p>
+            <p class="add_to_cart" style="background-color: #ffa41c">Buy Now</p>
+          </div>
+          <div class="secure_transaction">
+            <span class="material-symbols-outlined"> lock </span>
+            <p style="color: #177c94">Secure Transaction</p>
+          </div>
+          <div class="secure_transaction">
+            <input type="checkbox" name="" id="" />
+            <p style="color: rgb(15, 17, 17)">Add gift options</p>
+          </div>
+          <hr />
+          <div id="add_to_wishlist"><p>Add to Wish list</p></div>
         </div>
-        <div id="add_to_cart">
-         <p class="add_to_cart">Add to Cart</p>
-          <p class="add_to_cart" style="background-color: #ffa41c;">Buy Now</p>
+      </div>
+
+      <!-- top brand section -->
+      <div id="top_brands_section">
+        <div>
+          <span class="brand">
+            <img
+              alt=""
+              src="https://m.media-amazon.com/images/I/11sUgaVRsYL.png"
+              class="brand-snapshot-badge-space"
+              height="24"
+              width="81"
+            />
+            <p>Whirlpool</p>
+          </span>
+          <div>
+            <span class="material-symbols-outlined"> task_alt </span>
+            <span class="tick_p"
+              >88% positive ratings from 100K+ customers</span
+            >
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> task_alt </span>
+            <span class="tick_p">50K+ recent orders from this brand</span>
+          </div>
+          <div>
+            <span class="material-symbols-outlined"> task_alt </span>
+            <span class="tick_p">10+ years on Amazon</span>
+          </div>
         </div>
-        <div class="secure_transaction">
-        <span class="material-symbols-outlined">
-          lock
-          </span><p style="color: #177c94;">Secure Transaction</p>
+        <p id="line_seperaation"></p>
+        <div class="highly_rated_for_customers">
+          <p>Highly rated for customers</p>
+
+          <div id="recommend">
+            <div class="inside_recommend">
+              <span class="material-symbols-outlined"> recommend </span>
+              <span class="inside_recommend_p">Looks good</span>
+            </div>
+            <div class="inside_recommend">
+              <span class="material-symbols-outlined"> recommend </span>
+              <span class="inside_recommend_p">value for money</span>
+            </div>
+            <div class="inside_recommend">
+              <span class="material-symbols-outlined"> recommend </span>
+              <span class="inside_recommend_p">good installation</span>
+            </div>
+          </div>
         </div>
-        <div class="secure_transaction">
-          <input type="checkbox" name="" id="">
-          <p>Add gift options</p>
+      </div>
+
+      <!-- product card section -->
+      <div id="productsParent">
+        <div class="productCard">
+          <div class="imgCard">
+            <img
+              class="h-w-100"
+              alt="Ref"
+              src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
+            />
+          </div>
+          <p class="proName">
+            Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
+            Refrigerator
+          </p>
+          <div class="ratingDiv">
+            <div>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+            </div>
+            <p>5,344</p>
+          </div>
+          <p class="buyHistory">1K+ bought in past month</p>
+          <div class="priceDiv">
+            <span class="material-symbols-outlined"> currency_rupee </span>
+            <p>16,790</p>
+            <p>M.R.P: <span>₹22,999</span></p>
+          </div>
+          <p class="offer">(27% off)</p>
+          <p class="emi">Save extra with No Cost EMI</p>
+          <p class="delivery">
+            FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+          </p>
+          <p class="install">Service: Installation</p>
         </div>
+        <div class="productCard">
+          <div class="imgCard">
+            <img
+              class="h-w-100"
+              alt="Ref"
+              src="https://m.media-amazon.com/images/I/51FJ-6IDORL._AC_UL320_.jpg"
+            />
+          </div>
+          <p class="proName">
+            Haier 165 L, 1 Star, Direct-Cool Single Door Refrigerator
+            HED-171RS-P, Red Steel
+          </p>
+          <div class="ratingDiv">
+            <div>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+            </div>
+            <p>5,344</p>
+          </div>
+          <p class="buyHistory">1K+ bought in past month</p>
+          <div class="priceDiv">
+            <span class="material-symbols-outlined"> currency_rupee </span>
+            <p>16,790</p>
+            <p>M.R.P: <span>₹22,999</span></p>
+          </div>
+          <p class="offer">(27% off)</p>
+          <p class="emi">Save extra with No Cost EMI</p>
+          <p class="delivery">
+            FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+          </p>
+          <p class="install">Service: Installation</p>
+        </div>
+        <div class="productCard">
+          <div class="imgCard">
+            <img
+              class="h-w-100"
+              alt="Ref"
+              src="https://m.media-amazon.com/images/I/613URtMJwZL._AC_UL320_.jpg"
+            />
+          </div>
+          <p class="proName">
+            Godrej 564 L Multi Air Flow System, Frost Free Side-By-Side
+            Refrigerator
+          </p>
+          <div class="ratingDiv">
+            <div>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+            </div>
+            <p>5,344</p>
+          </div>
+          <p class="buyHistory">1K+ bought in past month</p>
+          <div class="priceDiv">
+            <span class="material-symbols-outlined"> currency_rupee </span>
+            <p>60,600</p>
+            <p>M.R.P: <span>₹95,000</span></p>
+          </div>
+          <p class="offer">(36% off)</p>
+          <p class="emi">Save extra with No Cost EMI</p>
+          <p class="delivery">
+            FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+          </p>
+          <p class="install">Service: Installation</p>
+        </div>
+        <div class="productCard">
+          <div class="imgCard">
+            <img
+              class="h-w-100"
+              alt="Ref"
+              src="https://m.media-amazon.com/images/I/51rI+jSqx5L._AC_UL320_.jpg"
+            />
+          </div>
+          <p class="proName">
+            <a href="fridge.html"
+              >Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator</a
+            >
+          </p>
+          <div class="ratingDiv">
+            <div>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+            </div>
+            <p>5,344</p>
+          </div>
+          <p class="buyHistory">1K+ bought in past month</p>
+          <div class="priceDiv">
+            <span class="material-symbols-outlined"> currency_rupee </span>
+            <p>12,590</p>
+            <p>M.R.P: <span>₹15,400</span></p>
+          </div>
+          <p class="offer">(18% off)</p>
+          <p class="emi">Save extra with No Cost EMI</p>
+          <p class="delivery">
+            FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+          </p>
+          <p class="install">Service: Installation</p>
+        </div>
+        <div class="productCard">
+          <div class="imgCard">
+            <img
+              class="h-w-100"
+              alt="Ref"
+              src="https://m.media-amazon.com/images/I/51DWwMapWxL._AC_UL320_.jpg"
+            />
+          </div>
+          <p class="proName">
+            Godrej 180 L 2 Star Advanced Capillary Technology,Single Door
+            Refrigerator
+          </p>
+          <div class="ratingDiv">
+            <div>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+            </div>
+            <p>1,390</p>
+          </div>
+          <p class="buyHistory">1K+ bought in past month</p>
+          <div class="priceDiv">
+            <span class="material-symbols-outlined"> currency_rupee </span>
+            <p>12,690</p>
+            <p>M.R.P: <span>17,500</span></p>
+          </div>
+          <p class="offer">(27% off)</p>
+          <p class="emi">Save extra with No Cost EMI</p>
+          <p class="delivery">
+            FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+          </p>
+          <p class="install">Service: Installation</p>
+        </div>
+        <div class="productCard">
+          <div class="imgCard">
+            <img
+              class="h-w-100"
+              alt="Ref"
+              src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
+            />
+          </div>
+          <p class="proName">
+            Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
+            Refrigerator
+          </p>
+          <div class="ratingDiv">
+            <div>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+            </div>
+            <p>5,344</p>
+          </div>
+          <p class="buyHistory">1K+ bought in past month</p>
+          <div class="priceDiv">
+            <span class="material-symbols-outlined"> currency_rupee </span>
+            <p>16,790</p>
+            <p>M.R.P: <span>₹22,999</span></p>
+          </div>
+          <p class="offer">(27% off)</p>
+          <p class="emi">Save extra with No Cost EMI</p>
+          <p class="delivery">
+            FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+          </p>
+          <p class="install">Service: Installation</p>
+        </div>
+        <div class="productCard">
+          <div class="imgCard">
+            <img
+              class="h-w-100"
+              alt="Ref"
+              src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
+            />
+          </div>
+          <p class="proName">
+            Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
+            Refrigerator
+          </p>
+          <div class="ratingDiv">
+            <div>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined col-yellow"> star </span>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+            </div>
+            <p>5,344</p>
+          </div>
+          <p class="buyHistory">1K+ bought in past month</p>
+          <div class="priceDiv">
+            <span class="material-symbols-outlined"> currency_rupee </span>
+            <p>16,790</p>
+            <p>M.R.P: <span>₹22,999</span></p>
+          </div>
+          <p class="offer">(27% off)</p>
+          <p class="emi">Save extra with No Cost EMI</p>
+          <p class="delivery">
+            FREE delivery by <b>Thu, 4 Jul, 7:00 am - 9:00 pm</b>
+          </p>
+          <p class="install">Service: Installation</p>
         </div>
       </div>
     </div>
