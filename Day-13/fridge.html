@@ -306,6 +306,9 @@
         align-items: center;
         letter-spacing: 0.5px;
       }
+      #fresh > span {
+        color: white;
+      }
       #miniTv {
         height: 96%;
         width: 8%;
@@ -518,13 +521,30 @@
 
       /* four divs of fridge */
       .parent_div {
-        /* border: 2px solid purple; */
+        border: 2px solid purple;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .fridge_left_div {
+        display: flex;
+        /* border: 1px solid red; */
+        width: 49%;
+        justify-content: space-around;
+        /* position: -webkit-sticky; 
+        position: sticky; */
+       
+      }
+      .fridge_right_div {
+        /* border: 1px solid green; */
+        display: flex;
+        justify-content: space-between;
+        width: 49%;
+        margin-left: 20px;
       }
       .first_left_div {
         /* border: 1px solid black; */
-        width: 4%;
+        width: 10%;
       }
       .first_left_div p {
         padding-top: 0;
@@ -540,43 +560,48 @@
         margin-left: 12px;
         border: 1px solid black;
         border-radius: 12px;
+        /* position: -webkit-sticky; 
+        position: sticky; */
       }
       .first_left_div img:hover {
         border: 5px double #007185;
       }
       .fridge_img_div {
+        /* margin-top: 30px; */
         /* border: 1px solid rebeccapurple; */
         background-color: #fff;
-        width: 36%;
-        min-height: 500px;
+        width: 90%;
+        max-height: 1022px;
+        
       }
       .grab {
         cursor: -webkit-grab;
         cursor: grab;
       }
       .fridge_img_div span {
-        margin-left: 90%;
+        margin: 20px 0 0 90%;
         color: black;
       }
       .fridge_img_div img {
         max-width: 100%;
-        /* width: 570px; */
+        /* border: 10x solid red; */
+      
         height: auto;
         position: -webkit-sticky;
         position: sticky;
         top: 0;
       }
-      .fridge_img_div p {
-        text-align: center;
+      .fridge_img_div_p {
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
-
+        margin-left: 330px;
         line-height: 20px;
         font-weight: 400;
         color: rgba(86, 89, 89);
       }
       .fridge_information {
         /* border: 1px solid yellow; */
-        width: 35%;
+        width: 63%;
       }
       .fridge_info_heading {
         font-size: 24px;
@@ -614,7 +639,7 @@
       }
       .inside_offers {
         width: 150px;
-        height: 100px;
+        height: 125px;
         /* border: 1px solid black; */
         box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.1),
           2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -626,28 +651,30 @@
       }
       .small_icons {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         /* border: 1px solid blue; */
         height: 100px;
       }
       .small_icons img {
         /* border: 1px solid red; */
-        margin-top: 5px;
-        height: 35px;
+        margin: 5px 10px 8px 10px;
+        max-width: 60px;
+        max-height: 35px;
       }
       .small_icons p {
         /* border: 1px solid orange; */
-        width: 80px;
-        margin-top: 5px;
-        /* text-align: justify; */
-        font-size: 13px;
+        width: 60px;
+        margin: 5px 5 0 5px;
+        text-align: center;
+        font-size: 12px;
+        
 
         font-weight: 400;
         line-height: 15.6px;
         color: rgb(0, 113, 133);
       }
       .about_items {
-        margin-left: 20px;
+        margin: 10px 0  0 20px;
       }
       #about_items_ul {
         text-align: justify;
@@ -660,14 +687,15 @@
       .fourth_parent_div {
         border: 2px solid #d9dcdc;
         border-radius: 10px;
-        width: 16%;
-        height: 612px;
+        width: 32%;
+        height: 630px;
         justify-content: space-around;
-        margin-bottom: 10px;
+        /* margin-bottom: 20px; */
       }
       .fourth_kid_one {
         padding: 10px 10px;
         justify-content: space-around;
+        background-color: #f3f3f3;
         /* border: 1px solid black; */
       }
       .fourth_kid_first {
@@ -697,6 +725,7 @@
         padding: 10px 10px;
       }
       .fourth_kid_two_p {
+        margin: 5px 0 5px 0;
         display: flex;
         align-items: center;
         border: 1px solid black;
@@ -718,8 +747,8 @@
         text-align: center;
       }
       .fourth_kid_two p {
-        /* border: 1px solid fuchsia; */
-        margin: 10px 10px;
+        /* border: 1px solid fuchsia;   */
+        margin: 15px 0 5px 0;
         /* text-align: center; */
         font-size: 14px;
         font-weight: 400;
@@ -802,7 +831,7 @@
         margin-top: 10px;
         border: 1px solid black;
         border-radius: 5px;
-        width: 244px;
+        width: 230px;
         height: 25px;
         padding-left: 15px;
         align-items: center;
@@ -1176,7 +1205,83 @@
         color: #d32e55;
         text-decoration: none;
       }
-      
+      @media screen and (min-width: 500px) and (max-width: 1000px) {
+        #screen {
+          max-width: 100%;
+        }
+        #navbar {
+          display: none;
+        }
+        #navBelt {
+          display: none;
+        }
+        #homeNav {
+          display: none;
+        }
+        #amazonNav {
+          display: none;
+        }
+        .homeNavCss {
+          display: none;
+        }
+        #menu {
+          display: none;
+        }
+        .home_and_Kitchen {
+          display: none;
+        }
+        .first_left_div {
+          display: none;
+        }
+        .fridge_img_div span {
+          display: none;
+        }
+        .fridge_img_div img {
+          position: static;
+          border: 1px solid green;
+        }
+        .fridge_img_div p {
+          display: none;
+        }
+        .fridge_information {
+          display: none;
+        }
+        .fourth_parent_div {
+          display: none;
+        }
+        .first_left_div {
+          display: none;
+        }
+        .first_left_div {
+          display: none;
+        }
+        #top_brands_section {
+          display: none;
+        }
+        .product_in_row {
+          display: none;
+        }
+        #tables_div {
+          display: none;
+        }
+        #whats_inside_box p {
+          /* display: none; */
+          font-size: 18px;
+        }
+        #li_inside_box {
+          font-size: 14px;
+          font-weight: 500;
+        }
+        #fromBrandParent {
+          display: none;
+        }
+        .todays_deals_container {
+          display: none;
+        }
+        .footer {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1296,332 +1401,348 @@
         <span>Deals on Refrigerators - Great Summer Sale</span>
       </div>
       <div class="parent_div">
-        <div class="first_left_div">
-          <img
-            src="https://m.media-amazon.com/images/I/31tH9CjR5LL._SX38_SY50_CR,0,0,38,50_.jpg"
-            alt=""
-          />
-          <div style="align-items: center">
+          <div class="fridge_left_div">
+          <div class="first_left_div">
             <img
-              src="https://m.media-amazon.com/images/I/41pmbIboFZL._SX35_SY46._CR0,0,35,46_BG85,85,85_BR-120_PKdp-play-icon-overlay__.jpg"
+              src="https://m.media-amazon.com/images/I/31tH9CjR5LL._SX38_SY50_CR,0,0,38,50_.jpg"
               alt=""
             />
-            <p class=".first_left_div p">Video</p>
+            <div style="align-items: center">
+              <img
+                src="https://m.media-amazon.com/images/I/41pmbIboFZL._SX35_SY46._CR0,0,35,46_BG85,85,85_BR-120_PKdp-play-icon-overlay__.jpg"
+                alt=""
+              />
+              <p class=".first_left_div p">Video</p>
+            </div>
+            <img
+              src="https://m.media-amazon.com/images/I/41owDhFhHdL._SX38_SY50_CR,0,0,38,50_.jpg"
+              alt=""
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/41qKG+WZMhL._SX38_SY50_CR,0,0,38,50_.jpg"
+              alt=""
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/51CvlVvm9cL._SX38_SY50_CR,0,0,38,50_.jpg"
+              alt=""
+            />
+            <img
+              src="https://m.media-amazon.com/images/I/31jxBvQnh-L._SX38_SY50_CR,0,0,38,50_.jpg"
+              alt=""
+            />
           </div>
-          <img
-            src="https://m.media-amazon.com/images/I/41owDhFhHdL._SX38_SY50_CR,0,0,38,50_.jpg"
-            alt=""
-          />
-          <img
-            src="https://m.media-amazon.com/images/I/41qKG+WZMhL._SX38_SY50_CR,0,0,38,50_.jpg"
-            alt=""
-          />
-          <img
-            src="https://m.media-amazon.com/images/I/51CvlVvm9cL._SX38_SY50_CR,0,0,38,50_.jpg"
-            alt=""
-          />
-          <img
-            src="https://m.media-amazon.com/images/I/31jxBvQnh-L._SX38_SY50_CR,0,0,38,50_.jpg"
-            alt=""
-          />
-        </div>
-        <div class="fridge_img_div">
-          <span class="material-symbols-outlined"> ios_share </span>
-          <img
-            class="grab"
-            src="https://m.media-amazon.com/images/I/51W0opp83WL._SX679_.jpg"
-            alt="Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator"
-          />
-          <p>Roll over image to zoom in</p>
-        </div>
-        <div class="fridge_information">
-          <p class="fridge_info_heading">
-            Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator (205 WDE
-            CLS 2S SAPPHIRE BLUE-Z, Blue,2023 Model)
-          </p>
-          <p style="font-size: 14px; color: #60c4e2; font-weight: 400">
-            Visit the Whirlpool Store
-          </p>
-          <span style="align-items: center; display: flex"
-            ><span style="font-size: 14px">4.1</span>
-            <span class="material-symbols-outlined , col-yellow"> star </span>
-            <span class="material-symbols-outlined , col-yellow"> star </span>
-            <span class="material-symbols-outlined , col-yellow"> star </span>
-            <span class="material-symbols-outlined , col-yellow"> star </span>
-            <span class="material-symbols-outlined"> star </span>
-            <span class="material-symbols-outlined"> keyboard_arrow_down </span>
-            <span style="color: #379bc0; font-size: 14px"
-              >3,638 ratings | Search this page</span
-            >
-          </span>
-
-          <span class="amazonsChoice">
+          <div class="fridge_img_div">
+            <span class="material-symbols-outlined"> ios_share </span>
             <img
-              style="height: 30px; width: 130px"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqQN8IYDB2uKIO0PjD1jxtPmj894_01unMkA&s"
-              alt=""
+              class="grab"
+              src="https://m.media-amazon.com/images/I/51W0opp83WL._SX679_.jpg"
+              alt="Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator"
             />
-          </span>
-
-          <p style="margin: 8px; font-size: 12px">1K+ bought in past month</p>
-          <hr />
-          <div>
-            <p class="great_discount">Great Indian Sale</p>
-            <span style="color: #cc0c39; font-size: 28px; font-weight: 400"
-              >-22%</span
-            ><span
-              style="
-                font-size: 28px;
-                font-weight: 400;
-                line-height: normal;
-                color: rgb(15, 17, 17);
-              "
-            >
-              ₹11,990</span
-            >
-            <p style="font-size: 12px; text-decoration: line-through">
-              M.R.P.: ₹15,400
+          </div>
+        </div>
+        <div class="fridge_right_div">
+          <div class="fridge_information">
+            <p class="fridge_info_heading">
+              Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator (205
+              WDE CLS 2S SAPPHIRE BLUE-Z, Blue,2023 Model)
             </p>
-            <p style="margin: 6px">Inclusive of all taxes</p>
-            <div style="display: flex; align-items: center">
-              <span
-                ><p style="font-size: 14px; color: black">
-                  <b>EMI</b> starts at ₹581. No Cost EMI available
-                </p></span
-              >
-              <span style="font-size: 14px; margin-left: 5px; color: #379bc0"
-                >EMI options</span
-              >
+            <p style="font-size: 14px; color: #60c4e2; font-weight: 400">
+              Visit the Whirlpool Store
+            </p>
+            <span style="align-items: center; display: flex"
+              ><span style="font-size: 14px">4.1</span>
+              <span class="material-symbols-outlined , col-yellow"> star </span>
+              <span class="material-symbols-outlined , col-yellow"> star </span>
+              <span class="material-symbols-outlined , col-yellow"> star </span>
+              <span class="material-symbols-outlined , col-yellow"> star </span>
+              <span class="material-symbols-outlined"> star </span>
               <span class="material-symbols-outlined">
                 keyboard_arrow_down
               </span>
-            </div>
-            <div
-              style="display: flex; align-items: center; margin-bottom: 12px"
-            >
-              <span class="material-symbols-outlined">
-                check_box_outline_blank
-              </span>
-              <span><p style="margin-right: 14px">Apply ₹500 coupon</p></span>
-              <span>Terms </span>
-              <span class="material-symbols-outlined">
-                keyboard_arrow_down
-              </span>
-            </div>
-            <hr />
-            <div style="margin-top: 10px; margin-bottom: 20px">
-              <h3 style="margin-left: 20px">Offers</h3>
-              <div class="offers_section">
-                <div class="inside_offers">
-                  <h3>Bank Offer</h3>
-                  <p>Upto ₹500.00 discount on SBI Credit Cards</p>
-                  <div style="display: flex; align-items: center">
-                    <p>1 offer</p>
-                    <span class="material-symbols-outlined">
-                      chevron_right
-                    </span>
-                  </div>
-                </div>
-
-                <div class="inside_offers">
-                  <h3>No Cost EMI</h3>
-                  <p>
-                    Upto ₹669.48 EMI interest savings on select Credit Cards…
-                  </p>
-                  <div style="display: flex; align-items: center">
-                    <p>3 offers</p>
-                    <span class="material-symbols-outlined">
-                      chevron_right
-                    </span>
-                  </div>
-                </div>
-
-                <div class="inside_offers">
-                  <h3>Partner Offers</h3>
-                  <p>
-                    Get GST invoice and save up to 28% on business purchases.
-                  </p>
-                  <div style="display: flex; align-items: center">
-                    <p>1 offer</p>
-                    <span class="material-symbols-outlined">
-                      chevron_right
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr />
-
-            <div class="small_icons">
-              <span>
-                <img
-                  src="https://m.media-amazon.com/images/G/31/VAS/TrustWidget/Service._CB607276514_.png"
-                  alt=""
-                />
-                <p>Setup at delivery available</p>
-              </span>
-              <span>
-                <img
-                  src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/81_81_Amazon_protect._CB433588194_.png"
-                  alt=""
-                />
-                <p>1 Year Warranty Care</p>
-              </span>
-              <span>
-                <img
-                  src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-warranty._CB485935626_.png"
-                  alt=""
-                />
-                <p>1 Year Warranty</p>
-              </span>
-              <span>
-                <img
-                  src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-returns._CB484059092_.png"
-                  alt=""
-                />
-                <p>10 days Replacement by Brand</p>
-              </span>
-              <span>
-                <img
-                  src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/trust_icon_free_shipping_81px._CB630870460_.png"
-                  alt=""
-                />
-                <p>Free Delivery</p>
-              </span>
-              <span>
-                <img
-                  src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-amazon-delivered._CB485933725_.png"
-                  alt=""
-                />
-                <p>Amazon Delivered</p>
-              </span>
-            </div>
-            <hr />
-            <div class="about_items">
-              <h3>About this item</h3>
-              <ul id="about_items_ul">
-                <li>
-                  Single door refrigerator with Intellisense Inverter Technology
-                </li>
-                <li>Capacity: 184 liters for families with 2-3 members</li>
-                <li>Energy Rating - 2 Star energy efficiency</li>
-                <li>1 year product warranty and 10 year compressor warranty</li>
-                <li>
-                  Intellisense Inverter technology - Comes with low starting
-                  voltage of 95V & assures 25 years of compressor reliability-
-                  certified by VDE Germany *As Certified by VDE Germany
-                </li>
-                <li>
-                  Special Feature - Stabilizer free operations even in high
-                  voltage fluctuations between 95V-300V
-                </li>
-                <li>
-                  Brand Specific Features - Upto 9 hours of cooling retention
-                  during power cuts, Easy Manual Defrosting, Jumbo Storage Up To
-                  3, 2L Bottle Storage, Insulated Capillary Technology, Auto
-                  Connect To Home Inverter, Large Vegetable Crisper, Honey Comb
-                  Lock In Technology & Quick Chill Zone
-                </li>
-              </ul>
-              <div style="align-items: center; display: flex">
-                <span class="material-symbols-outlined">
-                  keyboard_arrow_down </span
-                ><span style="color: #68c1ea; font-size: 14px; font-weight: 400"
-                  >Show more</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="fourth_parent_div">
-          <div class="fourth_kid_one">
-            <div class="fourth_kid_first">
-              <span>With Exchange</span><span><input type="radio" /></span>
-            </div>
-            <p>Up to ₹ 2,280.00 off</p>
-          </div>
-          <div class="fourth_kid_two">
-            <span class="fourth_kid_two_p">
-              <span class="fourth_span_one">Choose product to exchange</span>
-              <span class="material-symbols-outlined"> chevron_right </span>
+              <span style="color: #379bc0; font-size: 14px"
+                >3,638 ratings | Search this page</span
+              >
             </span>
-            <p>How does exchange work?</p>
-          </div>
-          <div class="fourth_kid_one">
-            <div class="fourth_kid_first">
-              <span>Without Exchange</span><span><input type="radio" /></span>
-            </div>
-            <span style="color: #b22719" class="fourth_span">₹ 12,590.00</span>
-            <span style="text-decoration: line-through" class="fourth_span"
-              >₹ 15,400.00</span
-            >
-          </div>
-          <div>
-            <span class="fourth_kid_three"
-              >FREE scheduled delivery as soon as
-              <b>Wednesday, 21 August, 7 AM - 9 PM.</b></span
-            >
-            <span class="fourth_kid_three" style="color: #177c94">Details</span>
-          </div>
-          <div style="align-items: center; display: flex; margin: 10px 10px">
-            <span class="material-symbols-outlined"> location_on </span>
-            <span class="address_text"
-              >Delivering to Navi Mumbai 410210 - Update Location</span
-            >
-          </div>
-          <div class="in_stock">
-            <p
-              style="
-                font-size: 18px;
-                color: rgb(0, 188, 0);
-                font-weight: 400;
-                line-height: 24px;
-              "
-            >
-              In stock
-            </p>
+
+            <span class="amazonsChoice">
+              <img
+                style="height: 30px; width: 130px"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqQN8IYDB2uKIO0PjD1jxtPmj894_01unMkA&s"
+                alt=""
+              />
+            </span>
+
+            <p style="margin: 8px; font-size: 12px">1K+ bought in past month</p>
+            <hr />
             <div>
-              <span style="font-size: 12px; color: black">
-                <pre style="margin-top: 10px">
-Ships from &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amazon</pre
+              <p class="great_discount">Great Indian Sale</p>
+              <span style="color: #cc0c39; font-size: 28px; font-weight: 400"
+                >-22%</span
+              ><span
+                style="
+                  font-size: 28px;
+                  font-weight: 400;
+                  line-height: normal;
+                  color: rgb(15, 17, 17);
+                "
+              >
+                ₹11,990</span
+              >
+              <p style="font-size: 12px; text-decoration: line-through">
+                M.R.P.: ₹15,400
+              </p>
+              <p style="margin: 6px">Inclusive of all taxes</p>
+              <div style="display: flex; align-items: center">
+                <span
+                  ><p style="font-size: 14px; color: black">
+                    <b>EMI</b> starts at ₹581. No Cost EMI available
+                  </p></span
                 >
+                <span style="font-size: 14px; margin-left: 5px; color: #379bc0"
+                  >EMI options</span
+                >
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </div>
+              <div
+                style="display: flex; align-items: center; margin-bottom: 12px"
+              >
+                <span class="material-symbols-outlined">
+                  check_box_outline_blank
+                </span>
+                <span><p style="margin-right: 14px">Apply ₹500 coupon</p></span>
+                <span>Terms </span>
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </div>
+              <hr />
+              <div style="margin-top: 10px; margin-bottom: 20px">
+                <h3 style="margin-left: 20px">Offers</h3>
+                <div class="offers_section">
+                  <div class="inside_offers">
+                    <h3>Bank Offer</h3>
+                    <p>Upto ₹500.00 discount on SBI Credit Cards</p>
+                    <div style="display: flex; align-items: center">
+                      <p>1 offer</p>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="inside_offers">
+                    <h3>No Cost EMI</h3>
+                    <p>
+                      Upto ₹669.48 EMI interest savings on select Credit Cards…
+                    </p>
+                    <div style="display: flex; align-items: center">
+                      <p>3 offers</p>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="inside_offers">
+                    <h3>Partner Offers</h3>
+                    <p>
+                      Get GST invoice and save up to 28% on business purchases.
+                    </p>
+                    <div style="display: flex; align-items: center">
+                      <p>1 offer</p>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+
+              <div class="small_icons">
+                <span>
+                  <img
+                    src="https://m.media-amazon.com/images/G/31/VAS/TrustWidget/Service._CB607276514_.png"
+                    alt=""
+                  />
+                  <p>Setup at delivery available</p>
+                </span>
+                <span>
+                  <img
+                    src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/81_81_Amazon_protect._CB433588194_.png"
+                    alt=""
+                  />
+                  <p>1 Year Warranty Care</p>
+                </span>
+                <span>
+                  <img
+                    src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-warranty._CB485935626_.png"
+                    alt=""
+                  />
+                  <p>1 Year Warranty</p>
+                </span>
+                <span>
+                  <img
+                    src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-returns._CB484059092_.png"
+                    alt=""
+                  />
+                  <p>10 days Replacement by Brand</p>
+                </span>
+                <span>
+                  <img
+                    src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/trust_icon_free_shipping_81px._CB630870460_.png"
+                    alt=""
+                  />
+                  <p>Free Delivery</p>
+                </span>
+                <span>
+                  <img
+                    src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-amazon-delivered._CB485933725_.png"
+                    alt=""
+                  />
+                  <p>Amazon Delivered</p>
+                </span>
+              </div>
+              <hr />
+              <div class="about_items">
+                <h3>About this item</h3>
+                <ul id="about_items_ul">
+                  <li>
+                    Single door refrigerator with Intellisense Inverter
+                    Technology
+                  </li>
+                  <li>Capacity: 184 liters for families with 2-3 members</li>
+                  <li>Energy Rating - 2 Star energy efficiency</li>
+                  <li>
+                    1 year product warranty and 10 year compressor warranty
+                  </li>
+                  <li>
+                    Intellisense Inverter technology - Comes with low starting
+                    voltage of 95V & assures 25 years of compressor reliability-
+                    certified by VDE Germany *As Certified by VDE Germany
+                  </li>
+                  <li>
+                    Special Feature - Stabilizer free operations even in high
+                    voltage fluctuations between 95V-300V
+                  </li>
+                  <li>
+                    Brand Specific Features - Upto 9 hours of cooling retention
+                    during power cuts, Easy Manual Defrosting, Jumbo Storage Up
+                    To 3, 2L Bottle Storage, Insulated Capillary Technology,
+                    Auto Connect To Home Inverter, Large Vegetable Crisper,
+                    Honey Comb Lock In Technology & Quick Chill Zone
+                  </li>
+                </ul>
+                <div style="align-items: center; display: flex">
+                  <span class="material-symbols-outlined">
+                    keyboard_arrow_down </span
+                  ><span
+                    style="color: #68c1ea; font-size: 14px; font-weight: 400"
+                    >Show more</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fourth_parent_div">
+            <div class="fourth_kid_one">
+              <div class="fourth_kid_first">
+                <span>With Exchange</span><span><input type="radio" /></span>
+              </div>
+              <p>Up to ₹ 2,280.00 off</p>
+            </div>
+            <div class="fourth_kid_two">
+              <span class="fourth_kid_two_p">
+                <span class="fourth_span_one">Choose product to exchange</span>
+                <span class="material-symbols-outlined"> chevron_right </span>
               </span>
+              <p>How does exchange work?</p>
+            </div>
+            <div class="fourth_kid_one">
+              <div class="fourth_kid_first">
+                <span>Without Exchange</span><span><input type="radio" /></span>
+              </div>
+              <span style="color: #b22719" class="fourth_span"
+                >₹ 12,590.00</span
+              >
+              <span style="text-decoration: line-through" class="fourth_span"
+                >₹ 15,400.00</span
+              >
             </div>
             <div>
-              <span style="font-size: 12px; color: black">
-                <pre style="margin: 10px 0 10px 0">
+              <span class="fourth_kid_three"
+                >FREE scheduled delivery as soon as
+                <b>Wednesday, 21 August, 7 AM - 9 PM.</b></span
+              >
+              <span class="fourth_kid_three" style="color: #177c94"
+                >Details</span
+              >
+            </div>
+            <div style="align-items: center; display: flex; margin: 10px 10px">
+              <span class="material-symbols-outlined"> location_on </span>
+              <span class="address_text"
+                >Delivering to Navi Mumbai 410210 - Update Location</span
+              >
+            </div>
+            <div class="in_stock">
+              <p
+                style="
+                  font-size: 18px;
+                  color: rgb(0, 188, 0);
+                  font-weight: 400;
+                  line-height: 24px;
+                "
+              >
+                In stock
+              </p>
+              <div>
+                <span style="font-size: 12px; color: black">
+                  <pre style="margin-top: 10px">
+Ships from &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amazon</pre
+                  >
+                </span>
+              </div>
+              <div>
+                <span style="font-size: 12px; color: black">
+                  <pre style="margin: 10px 0 10px 0">
 Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
                        ELECTRONICS PRIVATE
                        LIMITED</pre
-                >
-              </span>
+                  >
+                </span>
+              </div>
             </div>
+            <div id="Quantity_dropdown">
+              <label for="product_quantity">Quantity:</label>
+              <select name="product_quantity" id="product_quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <div id="add_to_cart">
+              <p class="add_to_cart">Add to Cart</p>
+              <p class="add_to_cart" style="background-color: #ffa41c">
+                Buy Now
+              </p>
+            </div>
+            <div class="secure_transaction">
+              <span class="material-symbols-outlined"> lock </span>
+              <p style="color: #177c94">Secure Transaction</p>
+            </div>
+            <div class="secure_transaction">
+              <input type="checkbox" name="" id="" />
+              <p style="color: rgb(15, 17, 17)">Add gift options</p>
+            </div>
+            <hr style="margin: 10px 0 10px 0;"/>
+            <div id="add_to_wishlist"><p>Add to Wish list</p></div>
           </div>
-          <div id="Quantity_dropdown">
-            <label for="product_quantity">Quantity:</label>
-            <select name="product_quantity" id="product_quantity">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-          </div>
-          <div id="add_to_cart">
-            <p class="add_to_cart">Add to Cart</p>
-            <p class="add_to_cart" style="background-color: #ffa41c">Buy Now</p>
-          </div>
-          <div class="secure_transaction">
-            <span class="material-symbols-outlined"> lock </span>
-            <p style="color: #177c94">Secure Transaction</p>
-          </div>
-          <div class="secure_transaction">
-            <input type="checkbox" name="" id="" />
-            <p style="color: rgb(15, 17, 17)">Add gift options</p>
-          </div>
-          <hr />
-          <div id="add_to_wishlist"><p>Add to Wish list</p></div>
         </div>
       </div>
-
+      
+      <p class="fridge_img_div_p">Roll over image to zoom in</p>
       <!-- top brand section -->
       <div id="top_brands_section">
         <div>
@@ -2130,7 +2251,7 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
         </div>
       </section>
       <!-- footer -->
-      <footer>
+      <footer class="footer">
         <div class="footer-top">
           <a href="#" class="back-to-top">Back to top</a>
         </div>
