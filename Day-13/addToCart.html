@@ -439,7 +439,8 @@
         color: #1f8caa;
         cursor: pointer;
       }
-      #SC_heading_section :hover,#SC_heading_section :hover {
+      #SC_heading_section :hover,
+      #SC_heading_section :hover {
         text-decoration: underline;
       }
 
@@ -485,7 +486,6 @@
       }
       .cart_item_names {
         /* border: 1px solid green; */
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 18px;
         font-weight: 400;
         line-height: 23.4px;
@@ -650,13 +650,14 @@
       #subDiv {
         align-items: center;
       }
-      #subDiv  p{
+      #subDiv p {
         text-align: end;
         font-size: 18px;
         font-weight: 400;
         line-height: 24px;
-        margin:10px 10px 20px 0;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 10px 10px 20px 0;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
       }
 
       /* todays_deal_ Section */
@@ -841,6 +842,153 @@
         display: none;
       }
 
+      @media screen and (min-width: 500px) and (max-width: 1000px) {
+        #screen {
+          max-width: 100%;
+          border: 3px solid green;
+        }
+        #navbar {
+          width: 100%;
+          justify-content: space-between;
+        }
+        #menu {
+          display: block;
+        }
+        #addressDiv {
+          display: none;
+        }
+        #centerDiv {
+          display: none;
+        }
+        #rightLang {
+          display: none;
+        }
+        #rightAccount {
+          display: none;
+        }
+        #rightOrders {
+          display: none;
+        }
+        #rightCart span:nth-child(4) {
+          display: none;
+        }
+        #navBelt {
+          display: none;
+        }
+        #leftDiv {
+          /* border: 1px solid white; */
+          justify-content: space-around;
+          width: 36%;
+          align-items: center;
+        }
+        #logoDiv {
+          width: 66%;
+        }
+        #rightDiv {
+          /* border: 1px solid white; */
+          width: 36%;
+        }
+        #rightCart span:nth-child(1) {
+          display: block;
+          font-size: 28px;
+        }
+        #rightCart span:nth-child(2) {
+          display: block;
+          font-size: 20px;
+        }
+        #rightCart {
+          width: 90%;
+          /* border: 1px solid yellow; */
+          justify-content: space-around;
+        }
+        #addToCartParent {
+          flex-direction: column;
+        }
+        #addToCartLeft {
+          width: 85%;
+          /* border: 1px solid rebeccapurple; */
+        }
+        #addToCartLeft_centerSection {
+          /* border: 1px solid yellow; */
+          justify-content: space-around;
+        }
+        .newCartSection {
+          border: 1px solid black;
+        }
+        .newcheckboxLeft {
+          /* border: 1px solid chocolate; */
+          width: 4%;
+        }
+        .newImgDiv {
+          /* border: 1px solid magenta; */
+          align-items: center;
+          width: 100px;
+          height: 120px;
+          margin-top: -60px;
+        }
+        .newProductSummary {
+          /* border: 1px solid blue; */
+          width: 70%;
+        }
+        .dropdown_for_qty {
+          display: none;
+        }
+        #styleName {
+          display: none;
+        }
+        .dropdown_for_qty span {
+          /* display: none; */
+        }
+        .giftParent {
+          display: none;
+        }
+        .cart_item_names {
+          display: none;
+        }
+        .newImgDiv img {
+          height: 100%;
+          width: 90%;
+          /* margin-top:-10px */
+        }
+        .media_cart_item_names {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18px;
+        }
+        .media_replacement_section {
+          font-size: 12px;
+          color: #2f8b9b;
+          font-weight: 400;
+          line-height: 16px;
+        }
+        .newProductPrice {
+          display: none;
+        }
+
+        .mediaQuantitySection {
+          margin-top: 10px;
+          border: 1px solid black;
+          border-radius: 4px;
+          height: 21px;
+        }
+        .mediaPrice {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 18px;
+          margin: 5px;
+        }
+        .inStockSection {
+          font-size: 14px;
+        }
+        .media_del_save_Seemore span {
+          /* border: 1px solid black; */
+          font-size: 14px;
+          font-weight: 400;
+          color: #2f8b9b;
+          margin: 0 10px 0 5px;
+        }
+      }
+      /* --------------------------------------------------------- */
       .material-symbols-outlined {
         font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 24;
       }
@@ -1067,6 +1215,15 @@
                   src="https://a.media-amazon.com/images/I/51CC9Etg9HL._AC_AA180_.jpg"
                   alt=""
                 />
+                <div class="mediaQuantitySection">
+                  <label for="qnty">Quantity</label>
+                  <select name="qnty" id="qnty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
               </div>
               <!-- product summary -->
               <div class="newProductSummary">
@@ -1075,6 +1232,12 @@
                   Luffy Figure Action Figure [20 cm] for Home Decors, Office
                   Desk and Study Table Toy Multicolor
                 </p>
+                <p class="media_cart_item_names">
+                  RVM Toys One Piece Anime Battle Record Collection Monkey D
+                  Luffy Figure Action Figure [20 cm] for Home Decors, Office
+                  Desk and Study Table Toy Multicolor
+                </p>
+                <p class="mediaPrice">₹ 899<sup>00</sup></p>
                 <p class="inStockSection">In stock</p>
                 <p class="primeBadge">
                   <span
@@ -1084,6 +1247,10 @@
                     check
                   </span>
                   <span style="color: #2ca2ff">prime</span>
+                </p>
+                <p class="media_del_save_Seemore">
+                  <span>Delete</span><span>Save for later</span
+                  ><span>See more like this</span>
                 </p>
                 <span class="giftParent">
                   <input type="checkbox" name="gift" id="gift" />
@@ -1124,16 +1291,29 @@
                   src="https://a.media-amazon.com/images/I/71kHVtSxjbL._AC_AA180_.jpg"
                   alt="Timmy Hilfiger Watch"
                 />
+                <div class="mediaQuantitySection">
+                  <label for="qnty">Quantity</label>
+                  <select name="qnty" id="qnty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
               </div>
               <!-- product summary -->
               <div class="newProductSummary">
                 <p class="cart_item_names">
                   Tommy Hilfiger Quartz Multifunction Blue Dial Stainless Steel
-                  Strap Watch for Women-TH1782576Tommy Hilfiger Quartz
-                  Multifunction Blue Dial Stainless Steel Strap Watch for
-                  Women-TH1782576
+                  Strap Watch for Women -TH1782576
                 </p>
+                <p class="media_cart_item_names">
+                  Tommy Hilfiger Quartz Multifunction Blue Dial Stainless Steel
+                  Strap Watch for Women -TH1782576
+                </p>
+                <p class="mediaPrice">₹ 10,528<sup>00</sup></p>
                 <p class="onlyFewStockSection">Only 5 left in stock.</p>
+                <p class="media_replacement_section">10 days Replacement</p>
                 <p class="primeBadge">
                   <span
                     style="color: #fdab1c"
@@ -1142,6 +1322,10 @@
                     check
                   </span>
                   <span style="color: #2ca2ff">prime</span>
+                </p>
+                <p class="media_del_save_Seemore">
+                  <span>Delete</span><span>Save for later</span
+                  ><span>See more like this</span>
                 </p>
                 <span class="giftParent">
                   <input type="checkbox" name="gift" id="gift" />
@@ -1180,6 +1364,15 @@
                   src="https://a.media-amazon.com/images/I/71-oBEGEnOL._AC_AA180_.jpg"
                   alt="Hp 15s Laptop"
                 />
+                <div class="mediaQuantitySection">
+                  <label for="qnty">Quantity</label>
+                  <select name="qnty" id="qnty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
               </div>
               <!-- product summary -->
               <div class="newProductSummary">
@@ -1188,6 +1381,12 @@
                   8GB DDR4, 512GB SSD, AMD Radeon Graphics, Thin & Light, Dual
                   Speakers (Win 11, MSO 2019, Silver) In 250+ carts
                 </p>
+                <p class="media_cart_item_names">
+                  HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm), FHD,
+                  8GB DDR4, 512GB SSD, AMD Radeon Graphics, Thin & Light, Dual
+                  Speakers (Win 11, MSO 2019, Silver) In 250+ carts
+                </p>
+                <p class="mediaPrice">₹ 32,490<sup>00</sup></p>
                 <p class="inStockSection">In stock</p>
                 <p class="primeBadge">
                   <span
@@ -1197,6 +1396,10 @@
                     check
                   </span>
                   <span style="color: #2ca2ff">prime</span>
+                </p>
+                <p class="media_del_save_Seemore">
+                  <span>Delete</span><span>Save for later</span
+                  ><span>See more like this</span>
                 </p>
                 <span class="giftParent">
                   <input type="checkbox" name="gift" id="gift" />
@@ -1235,6 +1438,15 @@
                   src="https://a.media-amazon.com/images/I/71f2I8cltBL._AC_AA220_.jpg"
                   alt="Samsung Z flip3"
                 />
+                <div class="mediaQuantitySection">
+                  <label for="qnty">Quantity</label>
+                  <select name="qnty" id="qnty">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
               </div>
               <!-- product summary -->
               <div class="newProductSummary">
@@ -1242,7 +1454,14 @@
                   Samsung Galaxy Z Flip3 5G (Cream, 8GB RAM, 128GB Storage) with
                   No Cost EMI/Additional Exchange Offers
                 </p>
+                <p class="media_cart_item_names">
+                  Samsung Galaxy Z Flip3 5G (Cream, 8GB RAM, 128GB Storage) with
+                  No Cost EMI/Additional Exchange Offers
+                </p>
+                <p class="media_cart_item_names"></p>
+                <p class="mediaPrice">₹ 49,999<sup>00</sup></p>
                 <p class="onlyFewStockSection">Only 1 left in stock</p>
+                <p class="media_replacement_section">10 days Replacement</p>
                 <p class="primeBadge">
                   <span
                     style="color: #fdab1c"
@@ -1251,6 +1470,10 @@
                     check
                   </span>
                   <span style="color: #2ca2ff">prime</span>
+                </p>
+                <p class="media_del_save_Seemore">
+                  <span>Delete</span>
+                  <span>Save for later</span><span>See more like this</span>
                 </p>
                 <span class="giftParent">
                   <input type="checkbox" name="gift" id="gift" />
@@ -1301,7 +1524,7 @@
               <span class="emi_available">Emi available</span>
               <span
                 class="material-symbols-outlined"
-                style="color: black; font-size: 12px;margin-right: -50px;"
+                style="color: black; font-size: 12px; margin-right: -50px"
               >
                 keyboard_arrow_down
               </span>
@@ -1310,323 +1533,323 @@
         </div>
       </div>
 
-     <!-- Products in a row -->
+      <!-- Products in a row -->
 
-     <section class="todays_deals_container">
-      <div class="todays_deals_heading">
-        <h1>Blockbuster deals</h1>
-        <p><a href="#">See all Deals</a></p>
-      </div>
+      <section class="todays_deals_container">
+        <div class="todays_deals_heading">
+          <h1>Blockbuster deals</h1>
+          <p><a href="#">See all Deals</a></p>
+        </div>
 
-      <div class="todays_deals_product_container">
-        <div class="todays_deals_product_list">
-          <div class="todays_deals_product_item">
-            <img
-              src="https://m.media-amazon.com/images/I/31qx8K0wm+L._SR480,440_.jpg"
-              alt=""
-            />
-            <div class="discount_Container">
-              <a href="#">22% off</a>
-              <a href="#">Great Freedom Sale</a>
+        <div class="todays_deals_product_container">
+          <div class="todays_deals_product_list">
+            <div class="todays_deals_product_item">
+              <img
+                src="https://m.media-amazon.com/images/I/31qx8K0wm+L._SR480,440_.jpg"
+                alt=""
+              />
+              <div class="discount_Container">
+                <a href="#">22% off</a>
+                <a href="#">Great Freedom Sale</a>
+              </div>
+              <p>Apple ipad(10th generation): with A1...</p>
             </div>
-            <p>Apple ipad(10th generation): with A1...</p>
+
+            <div class="todays_deals_product_item">
+              <img
+                src="https://m.media-amazon.com/images/I/4143CSktumL._SR480,440_.jpg"
+                alt=""
+              />
+              <div class="discount_Container">
+                <a href="#">42% off</a>
+                <a href="#">Great Freedom Sale</a>
+              </div>
+              <p>Dell [Smartchoice] 15 Thin & Light La...</p>
+            </div>
+
+            <div class="todays_deals_product_item">
+              <img
+                src="https://m.media-amazon.com/images/I/41fkX++tBSL._SR480,440_.jpg"
+                alt=""
+              />
+              <div class="discount_Container">
+                <a href="#">35% off</a>
+                <a href="#">Great Freedom Sale</a>
+              </div>
+              <p>Hp Laptop 15s,AMD Ryzen 5 5500U,...</p>
+            </div>
+
+            <div class="todays_deals_product_item">
+              <img
+                src="https://m.media-amazon.com/images/I/415gV21fNCL._SR480,440_.jpg"
+                alt=""
+              />
+              <div class="discount_Container">
+                <a href="#">22% off</a>
+                <a href="#">Great Freedom Sale</a>
+              </div>
+              <p>Xiaomi Pad 6 | Qualcomm Snapdragon...</p>
+            </div>
+
+            <div class="todays_deals_product_item">
+              <img
+                src="https://m.media-amazon.com/images/I/41BXqwJpz1L._SR480,440_.jpg"
+                alt=""
+              />
+              <div class="discount_Container">
+                <a href="#">42% off</a>
+                <a href="#">Great Freedom Sale</a>
+              </div>
+              <p>HP Laptop 15s,12 Gen Intel Core i5...</p>
+            </div>
+
+            <div class="todays_deals_product_item">
+              <img
+                src="https://m.media-amazon.com/images/I/41A8MP9gFAL._SR480,440_.jpg"
+                alt=""
+              />
+              <div class="discount_Container">
+                <a href="#">35% off</a>
+                <a href="#">Great Freedom Sale</a>
+              </div>
+              <p>Asus Vivobook 15 Thin and Light La....</p>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="todays_deals_product_item">
-            <img
-              src="https://m.media-amazon.com/images/I/4143CSktumL._SR480,440_.jpg"
-              alt=""
-            />
-            <div class="discount_Container">
-              <a href="#">42% off</a>
-              <a href="#">Great Freedom Sale</a>
+      <div class="product_in_row">
+        <p id="productCard_Heading">Explore more from Whirlpool</p>
+
+        <div id="productsParent">
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
+              />
             </div>
-            <p>Dell [Smartchoice] 15 Thin & Light La...</p>
+            <p class="proName">
+              Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
+              Refrigerator
+            </p>
+            <div class="ratingDiv">
+              <div>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </div>
+              <p>5,344</p>
+            </div>
+
+            <div class="priceDiv">
+              <p class="offer">-27%</p>
+              <div class="price_range">
+                <span class="material-symbols-outlined"> currency_rupee </span>
+                <p class="price">16,790</p>
+              </div>
+            </div>
           </div>
-
-          <div class="todays_deals_product_item">
-            <img
-              src="https://m.media-amazon.com/images/I/41fkX++tBSL._SR480,440_.jpg"
-              alt=""
-            />
-            <div class="discount_Container">
-              <a href="#">35% off</a>
-              <a href="#">Great Freedom Sale</a>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/51FJ-6IDORL._AC_UL320_.jpg"
+              />
             </div>
-            <p>Hp Laptop 15s,AMD Ryzen 5 5500U,...</p>
+            <p class="proName">
+              Haier 165 L, 1 Star, Direct-Cool Single Door Refrigerator
+              HED-171RS-P, Red Steel
+            </p>
+            <div class="ratingDiv">
+              <div>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </div>
+              <p>5,344</p>
+            </div>
+
+            <div class="priceDiv">
+              <p class="offer">-20%</p>
+              <div class="price_range">
+                <span class="material-symbols-outlined"> currency_rupee </span>
+                <p class="price">16,790</p>
+              </div>
+            </div>
           </div>
-
-          <div class="todays_deals_product_item">
-            <img
-              src="https://m.media-amazon.com/images/I/415gV21fNCL._SR480,440_.jpg"
-              alt=""
-            />
-            <div class="discount_Container">
-              <a href="#">22% off</a>
-              <a href="#">Great Freedom Sale</a>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/613URtMJwZL._AC_UL320_.jpg"
+              />
             </div>
-            <p>Xiaomi Pad 6 | Qualcomm Snapdragon...</p>
+            <p class="proName">
+              Godrej 564 L Multi Air Flow System, Frost Free Side-By-Side
+              Refrigerator
+            </p>
+            <div class="ratingDiv">
+              <div>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </div>
+              <p>5,344</p>
+            </div>
+
+            <div class="priceDiv">
+              <p class="offer">-29%</p>
+              <div class="price_range">
+                <span class="material-symbols-outlined"> currency_rupee </span>
+                <p class="price">26,790</p>
+              </div>
+            </div>
           </div>
-
-          <div class="todays_deals_product_item">
-            <img
-              src="https://m.media-amazon.com/images/I/41BXqwJpz1L._SR480,440_.jpg"
-              alt=""
-            />
-            <div class="discount_Container">
-              <a href="#">42% off</a>
-              <a href="#">Great Freedom Sale</a>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                style="width: 100%"
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/31ZknvzjEkL._AC_UF480,480_SR480,480_.jpg"
+              />
             </div>
-            <p>HP Laptop 15s,12 Gen Intel Core i5...</p>
+            <p class="proName">
+              Whirlpool 192 L 3 Star Vitamagic PRO Direct-Cool Single Door
+              Refrigerator 215 VITA...
+            </p>
+            <div class="ratingDiv">
+              <div>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </div>
+              <p>1,868</p>
+            </div>
+            <div class="priceDiv">
+              <p class="offer">-22%</p>
+              <div class="price_range">
+                <span class="material-symbols-outlined"> currency_rupee </span>
+                <p class="price">16,290</p>
+              </div>
+            </div>
           </div>
-
-          <div class="todays_deals_product_item">
-            <img
-              src="https://m.media-amazon.com/images/I/41A8MP9gFAL._SR480,440_.jpg"
-              alt=""
-            />
-            <div class="discount_Container">
-              <a href="#">35% off</a>
-              <a href="#">Great Freedom Sale</a>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/51DWwMapWxL._AC_UL320_.jpg"
+              />
             </div>
-            <p>Asus Vivobook 15 Thin and Light La....</p>
+            <p class="proName">
+              Godrej 180 L 2 Star Advanced Capillary Technology,Single Door
+              Refrigerator
+            </p>
+            <div class="ratingDiv">
+              <div>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </div>
+              <p>1,390</p>
+            </div>
+
+            <div class="priceDiv">
+              <p class="offer">-27%</p>
+              <div class="price_range">
+                <span class="material-symbols-outlined"> currency_rupee </span>
+                <p class="price">16,790</p>
+              </div>
+            </div>
+          </div>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                style="width: 100%"
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/41acRGP2cNL._AC_UF480,480_SR480,480_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Whirlpool 215 L Frost Free Triple-Door Refrigerator FP 223D
+              PROTTON ROY…
+            </p>
+            <div class="ratingDiv">
+              <div>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </div>
+              <p>4,709</p>
+            </div>
+
+            <div class="priceDiv">
+              <p class="offer">-31%</p>
+              <div class="price_range">
+                <span class="material-symbols-outlined"> currency_rupee </span>
+                <p class="price">24,690</p>
+              </div>
+            </div>
+          </div>
+          <div class="productCard">
+            <div class="imgCard">
+              <img
+                style="width: 100%"
+                class="h-w-100"
+                alt="Ref"
+                src="https://m.media-amazon.com/images/I/41FhLY78FnL._AC_UF480,480_SR480,480_.jpg"
+              />
+            </div>
+            <p class="proName">
+              Whirlpool 235 L (253D) Frost Free Triple-Door Refrigerator FP 253D
+              PROTTON ROY ART...
+            </p>
+            <div class="ratingDiv">
+              <div>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined col-yellow"> star </span>
+                <span class="material-symbols-outlined"> arrow_drop_down </span>
+              </div>
+              <p>4,299</p>
+            </div>
+
+            <div class="priceDiv">
+              <p class="offer">-31%</p>
+              <div class="price_range">
+                <span class="material-symbols-outlined"> currency_rupee </span>
+                <p class="price">26,690</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <div class="product_in_row">
-      <p id="productCard_Heading">Explore more from Whirlpool</p>
-
-      <div id="productsParent">
-        <div class="productCard">
-          <div class="imgCard">
-            <img
-              class="h-w-100"
-              alt="Ref"
-              src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
-            />
-          </div>
-          <p class="proName">
-            Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
-            Refrigerator
-          </p>
-          <div class="ratingDiv">
-            <div>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined"> arrow_drop_down </span>
-            </div>
-            <p>5,344</p>
-          </div>
-
-          <div class="priceDiv">
-            <p class="offer">-27%</p>
-            <div class="price_range">
-              <span class="material-symbols-outlined"> currency_rupee </span>
-              <p class="price">16,790</p>
-            </div>
-          </div>
-        </div>
-        <div class="productCard">
-          <div class="imgCard">
-            <img
-              class="h-w-100"
-              alt="Ref"
-              src="https://m.media-amazon.com/images/I/51FJ-6IDORL._AC_UL320_.jpg"
-            />
-          </div>
-          <p class="proName">
-            Haier 165 L, 1 Star, Direct-Cool Single Door Refrigerator
-            HED-171RS-P, Red Steel
-          </p>
-          <div class="ratingDiv">
-            <div>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined"> arrow_drop_down </span>
-            </div>
-            <p>5,344</p>
-          </div>
-
-          <div class="priceDiv">
-            <p class="offer">-20%</p>
-            <div class="price_range">
-              <span class="material-symbols-outlined"> currency_rupee </span>
-              <p class="price">16,790</p>
-            </div>
-          </div>
-        </div>
-        <div class="productCard">
-          <div class="imgCard">
-            <img
-              class="h-w-100"
-              alt="Ref"
-              src="https://m.media-amazon.com/images/I/613URtMJwZL._AC_UL320_.jpg"
-            />
-          </div>
-          <p class="proName">
-            Godrej 564 L Multi Air Flow System, Frost Free Side-By-Side
-            Refrigerator
-          </p>
-          <div class="ratingDiv">
-            <div>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined"> arrow_drop_down </span>
-            </div>
-            <p>5,344</p>
-          </div>
-
-          <div class="priceDiv">
-            <p class="offer">-29%</p>
-            <div class="price_range">
-              <span class="material-symbols-outlined"> currency_rupee </span>
-              <p class="price">26,790</p>
-            </div>
-          </div>
-        </div>
-        <div class="productCard">
-          <div class="imgCard">
-            <img
-              style="width: 100%"
-              class="h-w-100"
-              alt="Ref"
-              src="https://m.media-amazon.com/images/I/31ZknvzjEkL._AC_UF480,480_SR480,480_.jpg"
-            />
-          </div>
-          <p class="proName">
-            Whirlpool 192 L 3 Star Vitamagic PRO Direct-Cool Single Door
-            Refrigerator 215 VITA...
-          </p>
-          <div class="ratingDiv">
-            <div>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined"> arrow_drop_down </span>
-            </div>
-            <p>1,868</p>
-          </div>
-          <div class="priceDiv">
-            <p class="offer">-22%</p>
-            <div class="price_range">
-              <span class="material-symbols-outlined"> currency_rupee </span>
-              <p class="price">16,290</p>
-            </div>
-          </div>
-        </div>
-        <div class="productCard">
-          <div class="imgCard">
-            <img
-              class="h-w-100"
-              alt="Ref"
-              src="https://m.media-amazon.com/images/I/51DWwMapWxL._AC_UL320_.jpg"
-            />
-          </div>
-          <p class="proName">
-            Godrej 180 L 2 Star Advanced Capillary Technology,Single Door
-            Refrigerator
-          </p>
-          <div class="ratingDiv">
-            <div>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined"> arrow_drop_down </span>
-            </div>
-            <p>1,390</p>
-          </div>
-
-          <div class="priceDiv">
-            <p class="offer">-27%</p>
-            <div class="price_range">
-              <span class="material-symbols-outlined"> currency_rupee </span>
-              <p class="price">16,790</p>
-            </div>
-          </div>
-        </div>
-        <div class="productCard">
-          <div class="imgCard">
-            <img
-              style="width: 100%"
-              class="h-w-100"
-              alt="Ref"
-              src="https://m.media-amazon.com/images/I/41acRGP2cNL._AC_UF480,480_SR480,480_.jpg"
-            />
-          </div>
-          <p class="proName">
-            Whirlpool 215 L Frost Free Triple-Door Refrigerator FP 223D
-            PROTTON ROY…
-          </p>
-          <div class="ratingDiv">
-            <div>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined"> arrow_drop_down </span>
-            </div>
-            <p>4,709</p>
-          </div>
-
-          <div class="priceDiv">
-            <p class="offer">-31%</p>
-            <div class="price_range">
-              <span class="material-symbols-outlined"> currency_rupee </span>
-              <p class="price">24,690</p>
-            </div>
-          </div>
-        </div>
-        <div class="productCard">
-          <div class="imgCard">
-            <img
-              style="width: 100%"
-              class="h-w-100"
-              alt="Ref"
-              src="https://m.media-amazon.com/images/I/41FhLY78FnL._AC_UF480,480_SR480,480_.jpg"
-            />
-          </div>
-          <p class="proName">
-            Whirlpool 235 L (253D) Frost Free Triple-Door Refrigerator FP 253D
-            PROTTON ROY ART...
-          </p>
-          <div class="ratingDiv">
-            <div>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined col-yellow"> star </span>
-              <span class="material-symbols-outlined"> arrow_drop_down </span>
-            </div>
-            <p>4,299</p>
-          </div>
-
-          <div class="priceDiv">
-            <p class="offer">-31%</p>
-            <div class="price_range">
-              <span class="material-symbols-outlined"> currency_rupee </span>
-              <p class="price">26,690</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
       <!-- footer section -->
       <footer class="footer">
