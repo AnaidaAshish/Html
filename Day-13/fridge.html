@@ -533,7 +533,6 @@
         justify-content: space-around;
         /* position: -webkit-sticky; 
         position: sticky; */
-       
       }
       .fridge_right_div {
         /* border: 1px solid green; */
@@ -572,7 +571,6 @@
         background-color: #fff;
         width: 90%;
         max-height: 1022px;
-        
       }
       .grab {
         cursor: -webkit-grab;
@@ -585,7 +583,7 @@
       .fridge_img_div img {
         max-width: 100%;
         /* border: 10x solid red; */
-      
+
         height: auto;
         position: -webkit-sticky;
         position: sticky;
@@ -667,14 +665,13 @@
         margin: 5px 5 0 5px;
         text-align: center;
         font-size: 12px;
-        
 
         font-weight: 400;
         line-height: 15.6px;
         color: rgb(0, 113, 133);
       }
       .about_items {
-        margin: 10px 0  0 20px;
+        margin: 10px 0 0 20px;
       }
       #about_items_ul {
         text-align: justify;
@@ -1205,12 +1202,71 @@
         color: #d32e55;
         text-decoration: none;
       }
+      /* //////////////media query/////// */
+
+      #menu {
+        display: none;
+      }
+      #rightCart span:nth-child(1) {
+        display: none;
+      }
+      #rightCart span:nth-child(2) {
+        display: none;
+      }
       @media screen and (min-width: 500px) and (max-width: 1000px) {
         #screen {
           max-width: 100%;
         }
         #navbar {
+          display: 100%;
+          justify-content: space-between;
+        }
+        #menu {
+          display: block;
+        }
+        #addressDiv {
           display: none;
+        }
+        #centerDiv {
+          display: none;
+        }
+        #rightLang {
+          display: none;
+        }
+        #rightAccount {
+          display: none;
+        }
+        #rightOrders {
+          display: none;
+        }
+        #rightCart span:nth-child(4) {
+          display: none;
+        }
+        #leftDiv {
+          /* border: 1px solid white; */
+          justify-content: space-around;
+          width: 36%;
+          align-items: center;
+        }
+        #logoDiv {
+          width: 66%;
+        }
+        #rightDiv {
+          /* border: 1px solid white; */
+          width: 36%;
+        }
+        #rightCart span:nth-child(1) {
+          display: block;
+          font-size: 28px;
+        }
+        #rightCart span:nth-child(2) {
+          display: block;
+          font-size: 20px;
+        }
+        #rightCart {
+          width: 90%;
+          /* border: 1px solid yellow; */
+          justify-content: space-around;
         }
         #navBelt {
           display: none;
@@ -1218,29 +1274,34 @@
         #homeNav {
           display: none;
         }
-        #amazonNav {
-          display: none;
+        .parent_div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: 1px solid green;
         }
-        .homeNavCss {
-          display: none;
-        }
-        #menu {
-          display: none;
-        }
-        .home_and_Kitchen {
-          display: none;
-        }
-        .first_left_div {
-          display: none;
+        .fridge_left_div {
+          display: flex;
+          flex-direction: column;
+          border: 1px purple;
+          align-items: center;
+          justify-content: space-around;
         }
         .fridge_img_div span {
           display: none;
         }
-        .fridge_img_div img {
-          position: static;
-          border: 1px solid green;
+        .fridge_img_div {
+          align-items: center;
+          justify-content: space-around;
+          /* border: 1px solid red;  */
         }
-        .fridge_img_div p {
+        .media_fridge_right_div {
+          border: 1px solid black;
+        }
+        .first_left_div {
+          display: none;
+        }
+        .fridge_right_div {
           display: none;
         }
         .fridge_information {
@@ -1249,38 +1310,149 @@
         .fourth_parent_div {
           display: none;
         }
-        .first_left_div {
+        .fridge_img_div_p {
           display: none;
         }
-        .first_left_div {
-          display: none;
+        .media_heart_share_icon {
+          border: 1px solid black;
+          margin: 0 -420px 5px 0;
         }
-        #top_brands_section {
-          display: none;
+        .media_heart_share_icon span {
+          font-size: 20px;
+          color: black;
         }
-        .product_in_row {
-          display: none;
-        }
-        #tables_div {
-          display: none;
-        }
-        #whats_inside_box p {
-          /* display: none; */
-          font-size: 18px;
-        }
-        #li_inside_box {
+        #media_fridgeName {
+          /* border: 1px solid red; */
+          width: 500px;
           font-size: 14px;
-          font-weight: 500;
+          font-weight: 400;
+          color: rgb(91, 91, 91);
         }
-        #fromBrandParent {
+        #media_visitWhirlPool {
+          font-size: 14px;
+          color: #60c4e2;
+          font-weight: 400;
+          text-align: center;
+        }
+        .mediaProductRating {
+          /* border: 1px solid rebeccapurple; */
+          display: flex;
+          width: 500px;
+          align-items: center;
+          justify-content: space-around;
+        }
+        .mediaProductRating span :nth-child(7) {
           display: none;
         }
-        .todays_deals_container {
-          display: none;
+        .mediaProductRating span {
+          font-size: 12px;
         }
-        .footer {
-          display: none;
+        .media_amazonsChoice {
+          font-size: 14px;
         }
+        .mediaFridePriceSection {
+          /* border: 1px solid grey; */
+          width: 500px;
+        }
+        #mediaPriceHeading {
+          font-size: 16px;
+          font-weight: 400;
+          margin:10px 0 10px 0;
+          color: #2f8b9b;
+          /* border: 1px solid grey;   */
+        }
+        #mediaFridgePrice{
+          /* border: 1px solid green; */
+          /* justify-content: space-around; */
+          display: flex;
+        }
+        .mediaOff{
+          /* color: red; */
+          font-weight: 400;
+          font-size: 16px;
+        }
+        .primeBadge {
+        display: flex;
+        margin: 2px 0 5px 0;
+      }
+      .primeBadge > span {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+      }
+      #top_brands_section{
+        display: none;
+      }
+      .product_in_row{
+        /* border: 1px solid green; */
+        width: 100%;
+        /* margin-left: 140px; */
+      }
+      .productCard{
+        width: 42%;
+        height: 360px;
+        /* border: 1px solid black; */
+      }
+      #productsParent :nth-child(3){
+        display: none;
+      }
+      #productsParent :nth-child(4){
+        display: none;
+      }
+      #productsParent :nth-child(5){
+        display: none;
+      }
+      #productsParent :nth-child(6){
+        display: none;
+      }
+      #productsParent :nth-child(7){
+        display: none;
+      }
+      #media_tables_div{
+        width: 100%;
+      }
+      #parent_div{
+        width: 100%;
+       
+        /* border: 1px solid red; */
+        
+        justify-content: space-around;
+      }
+      .inside_parent_table{
+        width: 40%;
+        /* border: 1px solid yellow; */
+        margin-left: 30px;
+      }
+      .inside_parent_table :nth-child(3){
+        display: none;
+      }
+      .inside_parent_table :nth-child(4){
+        display: none;
+      }
+      .inside_parent_table :nth-child(5){
+        display: none;
+      }
+      .inside_parent_table :nth-child(6){
+        display: none;
+      }
+      .inside_parent_table :nth-child(7){
+        display: none;
+      }
+      .inside_parent_table :nth-child(8){
+        display: none;
+      }
+      .inside_parent_table :nth-child(9){
+        display: none;
+      }
+      .parent_div :last-child {
+        display: none;
+      }
+      #tables_div{
+        display: none;
+      }
+      .todays_deals_container{
+        width: 100%;
+      }
       }
     </style>
   </head>
@@ -1344,7 +1516,7 @@
             <span class="material-symbols-outlined"> person </span>
             <span>Login</span>
             <span class="material-symbols-outlined"> shopping_cart </span>
-            <span>Cart</span>
+            <span> Cart</span>
           </div>
         </div>
       </div>
@@ -1401,7 +1573,7 @@
         <span>Deals on Refrigerators - Great Summer Sale</span>
       </div>
       <div class="parent_div">
-          <div class="fridge_left_div">
+        <div class="fridge_left_div">
           <div class="first_left_div">
             <img
               src="https://m.media-amazon.com/images/I/31tH9CjR5LL._SX38_SY50_CR,0,0,38,50_.jpg"
@@ -1438,6 +1610,59 @@
               src="https://m.media-amazon.com/images/I/51W0opp83WL._SX679_.jpg"
               alt="Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator"
             />
+            <p id="media_visitWhirlPool">Visit the Whirlpool Store</p>
+          </div>
+          <!-- media query -->
+          <div class="media_heart_share_icon">
+            <span class="material-symbols-outlined"> favorite </span>
+            &nbsp;
+            <span class="material-symbols-outlined"> share </span>
+          </div>
+          <p id="media_fridgeName">
+            Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator (205 WDE
+            CLS 2S SAPPHIRE BLUE-Z, Blue,2023 Model)
+          </p>
+
+          <div class="mediaProductRating">
+            <span
+              ><span style="font-size: 12px">4.1</span>
+              <span class="material-symbols-outlined , col-yellow"> star </span>
+              <span class="material-symbols-outlined , col-yellow"> star </span>
+              <span class="material-symbols-outlined , col-yellow"> star </span>
+              <span class="material-symbols-outlined , col-yellow"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined">
+                keyboard_arrow_down
+              </span>
+              <span style="color: #379bc0; font-size: 12px"
+                >| 3,638 ratings | Search this page</span
+              >
+            </span>
+
+            <span class="media_amazonsChoice">
+              <img
+                style="height: 30px; width: 130px"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqQN8IYDB2uKIO0PjD1jxtPmj894_01unMkA&s"
+                alt=""
+              />
+            </span>
+          </div>
+
+          <div class="mediaFridePriceSection">
+            <p id="mediaPriceHeading">Price Details</p>
+            <div id="mediaFridgePrice">
+              <p class="mediaOff" style="color: #b22719;">-24% OFF</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <p class="mediaOff">₹12,999</p>
+              </div>
+              <p class="primeBadge">
+                <span
+                  style="color: #fdab1c"
+                  class="material-symbols-outlined"
+                >
+                  check
+                </span>
+                <span style="color: #2ca2ff">prime</span>
+              </p>
           </div>
         </div>
         <div class="fridge_right_div">
@@ -1723,7 +1948,9 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
               </select>
             </div>
             <div id="add_to_cart">
-              <p class="add_to_cart">Add to Cart</p>
+              <p class="add_to_cart">
+                <a href="../Day-13/addToCart.html">Add to Cart</a>
+              </p>
               <p class="add_to_cart" style="background-color: #ffa41c">
                 Buy Now
               </p>
@@ -1736,12 +1963,12 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
               <input type="checkbox" name="" id="" />
               <p style="color: rgb(15, 17, 17)">Add gift options</p>
             </div>
-            <hr style="margin: 10px 0 10px 0;"/>
+            <hr style="margin: 10px 0 10px 0" />
             <div id="add_to_wishlist"><p>Add to Wish list</p></div>
           </div>
         </div>
       </div>
-      
+
       <p class="fridge_img_div_p">Roll over image to zoom in</p>
       <!-- top brand section -->
       <div id="top_brands_section">
@@ -2025,7 +2252,116 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
           </div>
         </div>
       </div>
-
+<!-- media tbl -->
+ <div id="media_tables_div">
+        <p id="tables_Product_info">Product Information</p>
+        <div id="parent_div">
+          <div class="inside_parent_table">
+            <p class="table_p">Technical Details</p>
+            <table>
+              <tr class="tRow">
+                <th>Brand</th>
+                <td>Whirlpool</td>
+              </tr>
+              <tr class="tRow">
+                <th>Model</th>
+                <td>205 WDE CLS 2S</td>
+              </tr>
+              <tr class="tRow">
+                <th>Capacity</th>
+                <td>184 litres</td>
+              </tr>
+              <tr class="tRow">
+                <th>Annual Energy Consumption</th>
+                <td>190 Kilowatt Hours Per Year</td>
+              </tr>
+              <tr class="tRow">
+                <th>Refrigerator Fresh Food Capacity</th>
+                <td>169.2 litres</td>
+              </tr>
+              <tr class="tRow">
+                <th>Freezer Capacity</th>
+                <td>14.3 Litres</td>
+              </tr>
+              <tr class="tRow">
+                <th>Bottle Count</th>
+                <td>4</td>
+              </tr>
+              <tr class="tRow">
+                <th>Installation Type</th>
+                <td>Freestanding</td>
+              </tr>
+              <tr class="tRow">
+                <th>Part Number</th>
+                <td>205 WDE CLS 2S</td>
+              </tr>
+              <tr class="tRow">
+                <th>Form Factor</th>
+                <td>Stand Alone</td>
+              </tr>
+            </table>
+          </div>
+          <div class="inside_parent_table">
+            <p class="table_p">Additional Information</p>
+            <table>
+              <tr class="tRow">
+                <th>ASIN</th>
+                <td>B0BSRVL2VV</td>
+              </tr>
+              <tr class="tRow">
+                <th>Customer Reviews</th>
+                <td>4.1 out of 5 stars</td>
+              </tr>
+              <tr class="tRow">
+                <th>Best Sellers Rank</th>
+                <td>
+                  #1,863 in Home & Kitchen (See Top 100 in Home & Kitchen) #1 in
+                  Refrigerators (Home & Kitchen)
+                </td>
+              </tr>
+              <tr class="tRow">
+                <th>Date First Available</th>
+                <td>4 February 2023</td>
+              </tr>
+              <tr class="tRow">
+                <th>Manufacturer</th>
+                <td>
+                  Whirlpool of India Limited, Whirlpool of India Ltd. Plot No.
+                  A-4, MIDC Ranjangaon,Taluka Shirur, Dist: Pune, Maharashtra
+                  412220, India
+                </td>
+              </tr>
+              <tr class="tRow">
+                <th>Packer</th>
+                <td>
+                  Whirlpool of India Ltd. Plot No. A-4, MIDC Ranjangaon,Taluka
+                  Shirur, Dist: Pune, Maharashtra 412220, India
+                </td>
+              </tr>
+              <tr class="tRow">
+                <th>Importer</th>
+                <td>
+                  Whirlpool of India Ltd. Plot No. A-4, MIDC Ranjangaon,Taluka
+                  Shirur, Dist: Pune, Maharashtra 412220, India, Email -
+                  helpdeskindia@whirlpool.com ; Toll Free - 1800 208 1800
+                </td>
+              </tr>
+              <tr class="tRow">
+                <th>Item Weight</th>
+                <td>33 kg 400 g</td>
+              </tr>
+              <tr class="tRow">
+                <th>Item Dimensions</th>
+                <td>60.5 x 53.5 x 118.8 Centimeters</td>
+              </tr>
+              <tr class="tRow">
+                <th>Net Quantity</th>
+                <td>1 Piece</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
       <!-- table -->
       <div id="tables_div">
         <p id="tables_Product_info">Product Information</p>

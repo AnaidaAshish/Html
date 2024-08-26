@@ -841,7 +841,28 @@
       #rightCart span:nth-child(2) {
         display: none;
       }
-
+      .media_cart_item_names{
+        display: none;
+      }
+      .media_del_save_Seemore{
+        display: none;
+      }
+      .media_productPrice_Section{
+        display: none;
+      }
+      .mediaQuantitySection{
+        display: none;
+      }
+      .mediaPrice{
+        display: none;
+      }
+      .media_replacement_section{
+        display: none;
+      }
+      .mediaRatingDivPrice{
+        display: none;
+      }
+    
       @media screen and (min-width: 500px) and (max-width: 1000px) {
         #screen {
           max-width: 100%;
@@ -936,9 +957,7 @@
         #styleName {
           display: none;
         }
-        .dropdown_for_qty span {
-          /* display: none; */
-        }
+       
         .giftParent {
           display: none;
         }
@@ -951,11 +970,13 @@
           /* margin-top:-10px */
         }
         .media_cart_item_names {
+          display: block;
           font-size: 16px;
           font-weight: 400;
           line-height: 18px;
         }
         .media_replacement_section {
+          display: block;
           font-size: 12px;
           color: #2f8b9b;
           font-weight: 400;
@@ -966,12 +987,14 @@
         }
 
         .mediaQuantitySection {
+          display: block;
           margin-top: 10px;
           border: 1px solid black;
           border-radius: 4px;
           height: 21px;
         }
         .mediaPrice {
+          display: block;
           font-size: 20px;
           font-weight: 700;
           line-height: 18px;
@@ -979,6 +1002,10 @@
         }
         .inStockSection {
           font-size: 14px;
+          display: block;
+        }
+        .media_del_save_Seemore{
+          display: block;
         }
         .media_del_save_Seemore span {
           /* border: 1px solid black; */
@@ -986,6 +1013,7 @@
           font-weight: 400;
           color: #2f8b9b;
           margin: 0 10px 0 5px;
+         
         }
         #addToCartRight{
           margin-left: 140px;
@@ -1036,7 +1064,10 @@
           color: #2ca2ff;
           font-size: 14px;
         }
-      }
+        .mediaRatingDivPrice{
+          display: block;
+        }
+       }
       /* --------------------------------------------------------- */
       .material-symbols-outlined {
         font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 24;
