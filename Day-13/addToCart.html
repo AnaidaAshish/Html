@@ -786,7 +786,7 @@
       .col-yellow {
         color: #febd69;
       }
-      .ratingDiv p {
+      .ratingDiv_p {
         color: #387689;
         font-size: 14px;
       }
@@ -845,7 +845,7 @@
       @media screen and (min-width: 500px) and (max-width: 1000px) {
         #screen {
           max-width: 100%;
-          border: 3px solid green;
+          /* border: 3px solid green; */
         }
         #navbar {
           width: 100%;
@@ -905,7 +905,7 @@
           flex-direction: column;
         }
         #addToCartLeft {
-          width: 85%;
+          width: 90%;
           /* border: 1px solid rebeccapurple; */
         }
         #addToCartLeft_centerSection {
@@ -986,6 +986,55 @@
           font-weight: 400;
           color: #2f8b9b;
           margin: 0 10px 0 5px;
+        }
+        #addToCartRight{
+          margin-left: 140px;
+          /* border: 1px solid black; */
+          width: 300px;
+        }
+        #SubtotalTop{
+          border: 1px solid black;
+          width: 200x;
+          margin:10px 20px 10px 10px;
+        }
+        #proceedToBuy{
+          margin-left: -30px;
+        }
+        .todays_deals_product_list :nth-child(6){
+          display: none;
+        }
+        #productsParent :nth-child(4){
+          display: none;
+        }
+        #productsParent :nth-child(5){
+          display: none;
+        }
+        #productsParent :nth-child(6){
+          display: none;
+        }
+        #productsParent :nth-child(7){
+          display: none;
+        }
+        .productCard{
+          border: 1px solid blue;
+          width: 30%;
+          height: 260px;
+        }
+       .proName{
+        font-size: 12px;
+       }
+       .ratingDiv{
+        font-size: 12px;
+       }
+       .media_productPrice_Section{
+        border: 1px solid black;
+        }
+        .ratingDiv_p{
+          display: none;
+        }
+        .mediaRatingDivPrice{
+          color: #2ca2ff;
+          font-size: 14px;
         }
       }
       /* --------------------------------------------------------- */
@@ -1510,8 +1559,8 @@
         <div id="addToCartRight">
           <div class="addToCartRight_Top">
             <div id="SubtotalTop">
-              <p>Subtotal (3 items):</p>
-              <p>₹ 43,917.00</p>
+              <p>Subtotal (4 items):</p>
+              <p>₹ 93,916.00</p>
             </div>
             <div id="orderContains">
               <p><input type="checkbox" name="" id="" /></p>
@@ -1643,14 +1692,17 @@
                 <span class="material-symbols-outlined col-yellow"> star </span>
                 <span class="material-symbols-outlined"> arrow_drop_down </span>
               </div>
-              <p>5,344</p>
-            </div>
-
+              <p class="ratingDiv_p">5,344</p>
+              <p class="mediaRatingDivPrice">&nbsp;&nbsp;&nbsp;5,344</p>
+            
+             </div>
+             
             <div class="priceDiv">
               <p class="offer">-27%</p>
               <div class="price_range">
                 <span class="material-symbols-outlined"> currency_rupee </span>
                 <p class="price">16,790</p>
+                
               </div>
             </div>
           </div>
@@ -1675,7 +1727,8 @@
                 <span class="material-symbols-outlined col-yellow"> star </span>
                 <span class="material-symbols-outlined"> arrow_drop_down </span>
               </div>
-              <p>5,344</p>
+              <p class="ratingDiv_p">5,344</p>
+              <p class="mediaRatingDivPrice">&nbsp;&nbsp;&nbsp;5,344</p>
             </div>
 
             <div class="priceDiv">
@@ -1707,7 +1760,8 @@
                 <span class="material-symbols-outlined col-yellow"> star </span>
                 <span class="material-symbols-outlined"> arrow_drop_down </span>
               </div>
-              <p>5,344</p>
+              <p class="ratingDiv_p">5,344</p>
+              <p class="mediaRatingDivPrice">&nbsp;&nbsp;&nbsp;5,344</p>
             </div>
 
             <div class="priceDiv">
@@ -1740,7 +1794,7 @@
                 <span class="material-symbols-outlined col-yellow"> star </span>
                 <span class="material-symbols-outlined"> arrow_drop_down </span>
               </div>
-              <p>1,868</p>
+              <p class="ratingDiv_p">1,868</p>
             </div>
             <div class="priceDiv">
               <p class="offer">-22%</p>
@@ -1771,7 +1825,7 @@
                 <span class="material-symbols-outlined col-yellow"> star </span>
                 <span class="material-symbols-outlined"> arrow_drop_down </span>
               </div>
-              <p>1,390</p>
+              <p class="ratingDiv_p">1,390</p>
             </div>
 
             <div class="priceDiv">
@@ -1804,7 +1858,7 @@
                 <span class="material-symbols-outlined col-yellow"> star </span>
                 <span class="material-symbols-outlined"> arrow_drop_down </span>
               </div>
-              <p>4,709</p>
+              <p class="ratingDiv_p">4,709</p>
             </div>
 
             <div class="priceDiv">
@@ -1837,7 +1891,7 @@
                 <span class="material-symbols-outlined col-yellow"> star </span>
                 <span class="material-symbols-outlined"> arrow_drop_down </span>
               </div>
-              <p>4,299</p>
+              <p class="ratingDiv_p">4,299</p>
             </div>
 
             <div class="priceDiv">
