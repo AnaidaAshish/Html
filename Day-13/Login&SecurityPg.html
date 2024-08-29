@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Security</title>
+
+    <!-- amazon icon -->
+    <link
+      rel="icon"
+      href="https://icons.iconarchive.com/icons/bokehlicia/pacifica/256/amazon-icon.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- navbarcss stylesheet -->
+    <link rel="stylesheet" href="./navbar.css" />
+
+    <!-- footer stylesheet -->
+    <link rel="stylesheet" href="./footer.css" />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #bodyContent {
+        /* border: 1px solid black; */
+        /* align-items: center;
+            justify-content: center; */
+        width: 40%;
+        margin-left: 30%;
+      }
+      .yourAccount {
+        /* border: 1px solid red; */
+        margin: 20px 10px;
+
+        display: flex;
+      }
+      .yourAccount span {
+        color: #337f93;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+      .yourAccount-span {
+        color: rgb(196, 85, 0);
+      }
+      #loginAndSecurity {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 36px;
+        color: black;
+        margin-left: 10px;
+        /* border: 1px solid green; */
+      }
+      #loginDetails_Section {
+        border: 2px solid #eef0f0;
+        margin: 10px;
+        border-radius: 10px;
+      }
+      .inside_loginDetails {
+        display: flex;
+        border-bottom: 2px solid #e7e7e7;
+        justify-content: space-around;
+      }
+      .borderRight {
+        margin: 10px 0;
+        /* border: 1px solid black; */
+        width: 60%;
+        align-items: start;
+      }
+      .borderLeft {
+        /* border: 1px solid black; */
+        width: 30%;
+        margin: 10px 0;
+      }
+      .title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        margin-bottom: 5px;
+        text-align: start;
+      }
+      .UserDetail {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+      .blah {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 15px;
+      }
+      .editSection {
+        line-height: 29px;
+        font-weight: 400;
+        font-size: 13px;
+        border: 1px solid black;
+        text-align: center;
+        height: 28px;
+        width: 120px;
+        border-radius: 20px;
+        margin-left: 58px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="screen">
+      <!-- navBar -->
+      <div id="navbar">
+        <div id="leftDiv">
+          <div id="menu">
+            <span class="material-symbols-outlined"> menu </span>
+          </div>
+          <div id="logoDiv">
+            <img
+              style="height: 78%; width: 84%"
+              src="../Images/Amazon-India-Logo-PNG-White-removebg-preview.png"
+              alt="Amazon"
+            />
+          </div>
+          <div id="addressDiv">
+            <span class="material-symbols-outlined"> location_on </span>
+            <div>
+              <p id="addressP">Delivering to Mumbai 400070</p>
+              <h5>Update Location</h5>
+            </div>
+          </div>
+        </div>
+
+        <div id="centerDiv">
+          <div id="centerSection">
+            <p>All</p>
+            <span class="material-symbols-outlined"> arrow_drop_down </span>
+          </div>
+          <div id="centerSearch">
+            <input type="text" placeholder="Search Amazon.in" />
+          </div>
+          <div id="centerIcon">
+            <span class="material-symbols-outlined"> search </span>
+          </div>
+        </div>
+        <div id="rightDiv">
+          <div id="rightLang">
+            <img
+              style="height: 14px; width: 20px"
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+              alt="flag"
+            />
+            <p>EN</p>
+            <span class="material-symbols-outlined"> arrow_drop_down </span>
+          </div>
+          <div id="rightAccount">
+            <p>Hello, Anaida</p>
+            <div style="display: flex">
+              <h5>Account & List</h5>
+              <span class="material-symbols-outlined"> arrow_drop_down </span>
+            </div>
+          </div>
+          <div id="rightOrders">
+            <p>Returns</p>
+            <h5>& Orders</h5>
+          </div>
+          <div id="rightCart">
+            <span class="material-symbols-outlined"> person </span>
+            <span>Login</span>
+            <span class="material-symbols-outlined"> shopping_cart </span>
+            <span>Cart</span>
+          </div>
+        </div>
+      </div>
+      <!-- navBelt -->
+      <div id="navBelt">
+        <div class="menuHover" id="All">
+          <span class="material-symbols-outlined"> menu </span>
+          <p>All</p>
+        </div>
+        <div class="menuHover" id="fresh">
+          <p>Fresh</p>
+          <span class="material-symbols-outlined"> arrow_drop_down </span>
+        </div>
+        <div class="menuHover" id="miniTv">Amazon miniTv</div>
+        <div class="menuHover" id="sell">Sell</div>
+        <div class="menuHover" id="Bestseller">Best Sellers</div>
+        <div class="menuHover menuCss">Mobiles</div>
+        <div class="menuHover" id="Deals">Today's Deals</div>
+        <div class="menuHover menuCss">Fashion</div>
+        <div class="menuHover" id="prime">
+          <p>Prime</p>
+          <span class="material-symbols-outlined"> arrow_drop_down </span>
+        </div>
+        <div class="menuHover" id="Electronics">Electronics</div>
+        <div class="menuHover" id="Customer_Service">Customer Service</div>
+        <div class="menuHover" id="NR">New Releases</div>
+        <div class="menuHover" id="hnk">Home & Kitchen</div>
+        <div class="menuHover" id="Pay">Amazon Pay</div>
+        <div class="menuHover" id="Computers">Computers</div>
+        <div class="menuHover" id="Books">Books</div>
+        <div class="menuHover" id="Car">Car & Moterbike</div>
+      </div>
+
+      <div id="bodyContent">
+        <div class="yourAccount">
+          <span>Your Account</span>
+          <span class="material-symbols-outlined"> chevron_right </span>
+          <p class="yourAccount-span">Login & Security</p>
+        </div>
+        <p id="loginAndSecurity">Login and Security</p>
+
+        <div id="loginDetails_Section">
+          <div class="inside_loginDetails">
+            <div class="borderRight">
+              <p class="title">Name</p>
+              <p class="userDetail">Anaida Ashish</p>
+            </div>
+            <div class="borderLeft">
+              <p class="editSection">Edit</p>
+            </div>
+          </div>
+
+          <div class="inside_loginDetails">
+            <div class="borderRight">
+              <p class="title">Email</p>
+              <p class="userDetail">anaida@gmail.com</p>
+            </div>
+            <div class="borderLeft">
+              <p class="editSection">Edit</p>
+            </div>
+          </div>
+          <div class="inside_loginDetails">
+            <div class="borderRight">
+              <p class="title">Primary mobile number</p>
+              <p class="userDetail">+01234456789</p>
+              <p class="blah">
+                Quickly sign in, easily recover passwords and receive security
+                notifications with this mobile number.
+              </p>
+            </div>
+            <div class="borderLeft">
+              <p class="editSection">Edit</p>
+            </div>
+          </div>
+          <div class="inside_loginDetails">
+            <div class="borderRight">
+              <p class="title">Passkey</p>
+              <div style="display: flex">
+                <span style="color: #feaf3a" class="material-symbols-outlined">
+                  warning
+                </span>
+                <p class="userDetail">
+                  Sign in the same way you unlock your device by using your
+                  face, fingerprint, or PIN.
+                </p>
+              </div>
+            </div>
+            <div class="borderLeft">
+              <p class="editSection">Set up</p>
+            </div>
+          </div>
+          <div class="inside_loginDetails">
+            <div class="borderRight">
+              <p class="title">Password</p>
+              <p class="userDetail">********</p>
+            </div>
+
+            <div class="borderLeft">
+              <p class="editSection">Edit</p>
+            </div>
+          </div>
+          <div class="inside_loginDetails">
+            <div class="borderRight">
+              <p class="title">2-step verification</p>
+              <p class="userDetail">+0123456789</p>
+              <p>
+                Enter a code sent to your verification method, in addition to
+                your password, to sign in securely.
+              </p>
+            </div>
+            <div class="borderLeft">
+              <p class="editSection">Manage</p>
+            </div>
+          </div>
+          <div class="inside_loginDetails">
+            <div class="borderRight">
+              <p class="title">Compromised account?</p>
+              <p class="userDetail">
+                Take steps like changing your password and signing out
+                everywhere.
+              </p>
+            </div>
+            <div class="borderLeft">
+              <p class="editSection">Start</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer-top">
+          <a href="#" class="back-to-top">Back to top</a>
+        </div>
+        <div class="footer-middle">
+          <div class="footer-column">
+            <h3>Get to Know Us</h3>
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About Amazon</a></li>
+              <li><a href="#">Investor Relations</a></li>
+              <li><a href="#">Amazon Devices</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Make Money with Us</h3>
+            <ul>
+              <li><a href="#">Sell on Amazon</a></li>
+              <li><a href="#">Sell on Amazon Business</a></li>
+              <li><a href="#">Sell Your Apps on Amazon</a></li>
+              <li><a href="#">Become an Affiliate</a></li>
+              <li><a href="#">Advertise Your Products</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Amazon Payment Products</h3>
+            <ul>
+              <li><a href="#">Amazon Business Card</a></li>
+              <li><a href="#">Shop with Points</a></li>
+              <li><a href="#">Reload Your Balance</a></li>
+              <li><a href="#">Amazon Currency Converter</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Let Us Help You</h3>
+            <ul>
+              <li><a href="#">Amazon and COVID-19</a></li>
+              <li><a href="#">Your Account</a></li>
+              <li><a href="#">Your Orders</a></li>
+              <li><a href="#">Shipping Rates & Policies</a></li>
+              <li><a href="#">Returns & Replacements</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <ul class="footer-bottom-links">
+            <li><a href="#">Privacy Notice</a></li>
+            <li><a href="#">Conditions of Use</a></li>
+            <li><a href="#">Interest-Based Ads</a></li>
+            <li>&copy; 2024, YourCompany.com, Inc. or its affiliates</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
