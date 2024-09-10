@@ -26,6 +26,10 @@
     />
 
     <style>
+      a{
+        color: black;
+        text-decoration: none;
+      }
       * {
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
@@ -405,6 +409,34 @@
       .menuHover:hover {
         border: 1px solid white;
         border-radius: 2px;
+      }
+      /* homenav */
+      #homeNav {
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid #e1e1e1;
+        background-color: #ffffff;
+      }
+
+      #amazonNav {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 12px;
+      }
+
+      .homeNavCss {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 500;
+        color: rgb(26, 25, 25);
+      }
+      .homeNavCss:hover {
+        text-decoration: underline 2px solid #febd69;
       }
       /* Add to cart section */
       #addToCartParent {
@@ -841,32 +873,35 @@
       #rightCart span:nth-child(2) {
         display: none;
       }
-      .media_cart_item_names{
+      .media_cart_item_names {
         display: none;
       }
-      .media_del_save_Seemore{
+      .media_del_save_Seemore {
         display: none;
       }
-      .media_productPrice_Section{
+      .media_productPrice_Section {
         display: none;
       }
-      .mediaQuantitySection{
+      .mediaQuantitySection {
         display: none;
       }
-      .mediaPrice{
+      .mediaPrice {
         display: none;
       }
-      .media_replacement_section{
+      .media_replacement_section {
         display: none;
       }
-      .mediaRatingDivPrice{
+      .mediaRatingDivPrice {
         display: none;
       }
-    
+
       @media screen and (min-width: 500px) and (max-width: 1000px) {
         #screen {
           max-width: 100%;
           /* border: 3px solid green; */
+        }
+        #homeNav{
+          display: none;
         }
         #navbar {
           width: 100%;
@@ -957,7 +992,7 @@
         #styleName {
           display: none;
         }
-       
+
         .giftParent {
           display: none;
         }
@@ -1004,7 +1039,7 @@
           font-size: 14px;
           display: block;
         }
-        .media_del_save_Seemore{
+        .media_del_save_Seemore {
           display: block;
         }
         .media_del_save_Seemore span {
@@ -1013,61 +1048,60 @@
           font-weight: 400;
           color: #2f8b9b;
           margin: 0 10px 0 5px;
-         
         }
-        #addToCartRight{
+        #addToCartRight {
           margin-left: 140px;
           /* border: 1px solid black; */
           width: 300px;
         }
-        #SubtotalTop{
+        #SubtotalTop {
           border: 1px solid black;
           width: 200x;
-          margin:10px 20px 10px 10px;
+          margin: 10px 20px 10px 10px;
         }
-        #proceedToBuy{
+        #proceedToBuy {
           margin-left: -30px;
         }
-        .todays_deals_product_list :nth-child(6){
+        .todays_deals_product_list :nth-child(6) {
           display: none;
         }
-        #productsParent :nth-child(4){
+        #productsParent :nth-child(4) {
           display: none;
         }
-        #productsParent :nth-child(5){
+        #productsParent :nth-child(5) {
           display: none;
         }
-        #productsParent :nth-child(6){
+        #productsParent :nth-child(6) {
           display: none;
         }
-        #productsParent :nth-child(7){
+        #productsParent :nth-child(7) {
           display: none;
         }
-        .productCard{
+        .productCard {
           border: 1px solid blue;
           width: 30%;
           height: 260px;
         }
-       .proName{
-        font-size: 12px;
-       }
-       .ratingDiv{
-        font-size: 12px;
-       }
-       .media_productPrice_Section{
-        border: 1px solid black;
+        .proName {
+          font-size: 12px;
         }
-        .ratingDiv_p{
+        .ratingDiv {
+          font-size: 12px;
+        }
+        .media_productPrice_Section {
+          border: 1px solid black;
+        }
+        .ratingDiv_p {
           display: none;
         }
-        .mediaRatingDivPrice{
+        .mediaRatingDivPrice {
           color: #2ca2ff;
           font-size: 14px;
         }
-        .mediaRatingDivPrice{
+        .mediaRatingDivPrice {
           display: block;
         }
-       }
+      }
       /* --------------------------------------------------------- */
       .material-symbols-outlined {
         font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 24;
@@ -1260,6 +1294,20 @@
         <div class="menuHover" id="Computers">Computers</div>
         <div class="menuHover" id="Books">Books</div>
         <div class="menuHover" id="Car">Car & Moterbike</div>
+      </div>
+      <!-- homeNav -->
+      <div id="homeNav">
+        <div id="amazonNav"><b><a href="/Day-13/HomePageMain.html">Amazon Home</a></b></div>
+        <div class="homeNavCss">Kitchen & Home Appliances</div>
+        <div class="homeNavCss">Large Appliances</div>
+        <div class="homeNavCss">Kitchen & Dining</div>
+        <div class="homeNavCss">Furniture</div>
+        <div class="homeNavCss">Home Furnishing</div>
+        <div class="homeNavCss">Home Decore</div>
+        <div class="homeNavCss">Home Improvement</div>
+        <div class="homeNavCss">Garden & Outdoor</div>
+        <div class="homeNavCss">Storage & Organisation</div>
+        <div class="homeNavCss">Lighting</div>
       </div>
       <!-- add to cart section -->
 
@@ -1725,15 +1773,13 @@
               </div>
               <p class="ratingDiv_p">5,344</p>
               <p class="mediaRatingDivPrice">&nbsp;&nbsp;&nbsp;5,344</p>
-            
-             </div>
-             
+            </div>
+
             <div class="priceDiv">
               <p class="offer">-27%</p>
               <div class="price_range">
                 <span class="material-symbols-outlined"> currency_rupee </span>
                 <p class="price">16,790</p>
-                
               </div>
             </div>
           </div>

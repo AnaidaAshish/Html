@@ -64,9 +64,9 @@
       .material-symbols-outlined {
         font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
       }
-      a {
-        text-decoration: none;
+      a{
         color: black;
+        text-decoration: none;
       }
       * {
         font-family: Arial, sans-serif;
@@ -462,6 +462,7 @@
       }
 
       #amazonNav {
+        color: black;
         font-size: 14px;
         font-weight: 700;
         line-height: 12px;
@@ -952,19 +953,24 @@
         color: rgb(51, 51, 51);
       }
       .productCard {
-        height: 390px;
+        height: 400px;
         width: 12%;
         margin: 14px 0 14px 0;
         border-radius: 10px;
+        /* border: 1px solid blue; */
       }
 
       .imgCard {
         width: 100%;
-        height: 54%;
+        height: 50%;
         display: flex;
         justify-content: center;
         background-color: #f7f7f7;
         border-radius: 10px;
+      }
+      .imgCard img {
+        width: 100%;
+        width: 100%;
       }
       .h-w-100 {
         padding-top: 24px;
@@ -981,19 +987,16 @@
         color: #378f9f;
       }
       .ratingDiv {
-        /* border: 1px solid green;  */
+        /* border: 1px solid green; */
         display: flex;
-        padding: 10px;
-        padding-top: 0px;
-        padding-bottom: 0px;
       }
       .ratingDiv span {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 20px;
       }
       .col-yellow {
-        color: #febd69;
+        color: #de7921;
       }
       .ratingDiv p {
         color: #387689;
@@ -1003,7 +1006,7 @@
       .priceDiv {
         display: flex;
         padding: 10px;
-        padding-top: 0px;
+        /* padding-top: 0px; */
         padding-bottom: 2px;
       }
       .priceDiv span {
@@ -1024,7 +1027,7 @@
       .offer {
         /* padding: 10px; */
         padding-top: 0px;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
         line-height: 20px;
         margin-right: 10px;
@@ -1035,7 +1038,7 @@
       }
       .price {
         /* border: 1px solid yellow; */
-        font-size: 21px;
+
         font-weight: 400;
         line-height: normal;
         color: rgb(15, 17, 17);
@@ -1197,9 +1200,7 @@
       .todays_deals_product_item img {
         width: 100%;
       }
-      .discount_Container {
-        /* border: 2px solid red; */
-      }
+     
       .discount_Container a:first-child {
         background-color: #d32e55;
         padding: 5px 10px;
@@ -1216,10 +1217,10 @@
         text-decoration: none;
       }
       /* //////////////media query/////// */
-      #mediaMesure{
+      #mediaMesure {
         display: none;
       }
-      .mediaFridgePrice{
+      .mediaFridgePrice {
         display: none;
       }
       #menu {
@@ -1242,6 +1243,18 @@
         display: none;
       }
       .media_visitWhirlPool {
+        display: none;
+      }
+      #media_visitWhirlPool {
+        display: none;
+      }
+      #media_rating_div {
+        display: none;
+      }
+      .whirlpool {
+        display: none;
+      }
+      #media_p {
         display: none;
       }
 
@@ -1316,7 +1329,7 @@
         .fridge_left_div {
           display: flex;
           flex-direction: column;
-          border: 1px purple;
+          /* border: 1px solid purple; */
           align-items: center;
           justify-content: space-around;
         }
@@ -1326,10 +1339,13 @@
         .fridge_img_div {
           align-items: center;
           justify-content: space-around;
+          height: 320px;
+          width: 310px;
           /* border: 1px solid red;  */
         }
-        .media_fridge_right_div {
-          border: 1px solid black;
+        .fridge_img_div img {
+          height: 100%;
+          width: 100%;
         }
         .first_left_div {
           display: none;
@@ -1347,14 +1363,26 @@
           display: none;
         }
         .media_heart_share_icon {
-          border: 1px solid black;
-          margin: 0 -400px 5px 0;
+          display: flex;
+          /* border: 1px solid black; */
+          margin: 0 5px 5px 0;
         }
         .media_heart_share_icon span {
-          font-size: 20px;
+          font-size: 26px;
           color: black;
+          margin-right: 15px;
         }
-
+        #whirlpool_logo {
+          /* border: 1px solid green; */
+          /* margin: 0 0 10px -220px;  */
+          display: flex;
+          justify-content: space-between;
+        }
+        #whirlpool_logo :nth-child(1) {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 14px;
+        }
         #media_fridgeName {
           /* border: 1px solid red; */
           display: block;
@@ -1366,9 +1394,25 @@
         #media_visitWhirlPool {
           display: block;
           font-size: 14px;
-          color: #60c4e2;
+          color: #2d89a7;
+          line-height: 16px;
           font-weight: 400;
-          text-align: center;
+        }
+        .whirlpool {
+          display: block;
+          /* border: 1px solid yellowgreen; */
+          margin-left: -260px;
+        }
+        #media_rating_div {
+          display: flex;
+          /* border: 1px solid red; */
+          align-items: center;
+          margin-right: -260px;
+        }
+
+        #media_rating_div span {
+          color: #ffa41c;
+          font-size: 16px;
         }
         .mediaProductRating {
           /* border: 1px solid rebeccapurple; */
@@ -1399,7 +1443,7 @@
           /* border: 1px solid grey;   */
         }
         #mediaFridgePrice {
-          border: 1px solid green;
+          /* border: 1px solid green; */
 
           display: flex;
         }
@@ -1423,16 +1467,23 @@
         .product_in_row {
           /* border: 1px solid green; */
           width: 100%;
+
           /* margin-left: 140px; */
         }
         .productCard {
-          width: 42%;
-          height: 360px;
-          /* border: 1px solid black; */
+          width: 30%;
+          height: 350px;
+          border: 1px solid black;
         }
-        #productsParent :nth-child(3) {
+        .imgCard img {
+          width: 100%;
+        }
+        #productsParent {
+          /* border: 1px solid blueviolet; */
+        }
+        /* #productsParent :nth-child(3) {
           display: none;
-        }
+        } */
         #productsParent :nth-child(4) {
           display: none;
         }
@@ -1450,9 +1501,7 @@
         }
         #parent_div {
           width: 100%;
-
           /* border: 1px solid red; */
-
           justify-content: space-around;
         }
         .inside_parent_table {
@@ -1465,30 +1514,30 @@
           display: flex;
           flex-direction: column;
         }
-        .inside_parent_table{
+        .inside_parent_table {
           /* border: 1px solid red; */
           width: 45%;
           margin-left: 3px;
         }
-        .inside_parent_table :nth-child(4){
+        .inside_parent_table :nth-child(4) {
           display: none;
         }
-        .inside_parent_table :nth-child(5){
+        .inside_parent_table :nth-child(5) {
           display: none;
         }
-        .inside_parent_table :nth-child(6){
+        .inside_parent_table :nth-child(6) {
           display: none;
         }
-        .inside_parent_table :nth-child(7){
+        .inside_parent_table :nth-child(7) {
           display: none;
         }
-        .inside_parent_table :nth-child(8){
+        .inside_parent_table :nth-child(8) {
           display: none;
         }
-        .inside_parent_table :nth-child(9){
+        .inside_parent_table :nth-child(9) {
           display: none;
         }
-        .inside_parent_table :nth-child(10){
+        .inside_parent_table :nth-child(10) {
           display: none;
         }
         .todays_deals_container {
@@ -1507,11 +1556,23 @@
         }
         #media_fridgeName {
           display: block;
+          color: black;
+          font-weight: 600;
+          line-height: 18px;
+          margin: 10px 0 5px -20px;
+        }
+        #media_p {
+          display: block;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 14px;
+          margin-left: -340px;
         }
         .mediaPrice {
           font-size: 20px;
           color: black;
         }
+
         #media_add_to_cart {
           /* border: 1px solid blue ; */
           width: 300px;
@@ -1538,30 +1599,21 @@
           /* border: 1px solid grey; */
           margin-top: 10px;
         }
-        #mediaMesure {
-          border: 1px solid grey;
-          height: 30px;
-          display: block;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 16px;
-          color: #177c94;
-          padding: 10px;
-        }
+
         .mediaFridgePrice {
-          /* border: 1px solid red; */
+          border-top: 1px solid black;
           width: 520px;
         }
-        .todays_deals_heading{
+        .todays_deals_heading {
           display: none;
         }
-        .todays_deals_product_container{
-          display: none
+        .todays_deals_product_container {
+          display: none;
         }
-        #fromBrandParent_p{
-          border: 1px solid yellow;
+        #fromBrandParent_p {
+          /* border: 1px solid yellow; */
         }
-        .inside_brand_parent_p{
+        .inside_brand_parent_p {
           margin-left: 0;
           font-weight: 700;
           font-size: 14px;
@@ -1572,6 +1624,30 @@
 
         .mediaFridgePrice {
           display: block;
+        }
+        .media_rupee {
+          display: flex;
+        }
+        .media_rupee p {
+          font-size: 12px;
+          color: black;
+        }
+        .media_rupee :nth-child(2) {
+          text-decoration: line-through;
+        }
+        #media_rupee {
+          display: flex;
+          align-items: center;
+          margin: 5px;
+        }
+        #media_rupee :nth-child(1) {
+          color: red;
+          font-size: 18px;
+        }
+        #media_rupee :nth-child(2) {
+          font-size: 16px;
+          font-weight: 600;
+          margin-left: 15px;
         }
       }
     </style>
@@ -1671,7 +1747,7 @@
       </div>
 
       <div id="homeNav">
-        <div id="amazonNav"><b>Amazon Home</b></div>
+        <div id="amazonNav"><b><a href="/Day-13/HomePageMain.html">Amazon Home</a></b></div>
         <div class="homeNavCss">Kitchen & Home Appliances</div>
         <div class="homeNavCss">Large Appliances</div>
         <div class="homeNavCss">Kitchen & Dining</div>
@@ -1730,25 +1806,50 @@
               src="https://m.media-amazon.com/images/I/51W0opp83WL._SX679_.jpg"
               alt="Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator"
             />
-            <p id="media_visitWhirlPool">Visit the Whirlpool Store</p>
           </div>
           <!-- media query -->
           <div class="media_icons">
-            <span class="material-symbols-outlined"> favorite </span>
-            <span class="material-symbols-outlined"> share </span>
+            <div class="media_heart_share_icon">
+              <span class="material-symbols-outlined"> favorite </span>
+              <span class="material-symbols-outlined"> share </span>
+            </div>
           </div>
+          <div id="whirlpool_logo">
+            <div class="whirlpool">
+              <p>Whirlpool</p>
+              <p id="media_visitWhirlPool">Visit the Whirlpool Store</p>
+            </div>
+            <div id="media_rating_div">
+              <p style="font-size: 14px; margin-right: 5px">4.0</p>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+              <span class="material-symbols-outlined"> star </span>
+            </div>
+          </div>
+
           <p id="media_fridgeName">
             Whirlpool 184 L 2 Star Direct-Cool Single Door Refrigerator (205 WDE
             CLS 2S SAPPHIRE BLUE-Z, Blue,2023 Model)
           </p>
+          <p id="media_p">200+ bought past month</p>
+          <br />
+
           <div class="mediaFridgePrice">
-            <p id="mediaMesure">Measurements</p>
             <span>
-              <span class="mediaPrice" style="font-weight: 700">₹ 1,998</span>
+              <span class="mediaPrice" style="font-weight: 700">₹ 2,082</span>
               <span class="mediaPrice">/ month (6 months)</span>
             </span>
             <p>with <b>No Cost EMI</b> on your Axis bank Credit card</p>
-
+            <div id="media_rupee">
+              <p>-30%</p>
+              <p>₹ 12,490</p>
+            </div>
+            <div class="media_rupee">
+              <p>M.R.P.:</p>
+              <p>₹ 17,750</p>
+            </div>
             <p class="primeBadge">
               <span style="color: #fdab1c" class="material-symbols-outlined">
                 check
@@ -1756,6 +1857,8 @@
               <span style="color: #2ca2ff">prime</span>
             </p>
             <p style="padding-top: 0">Inclusive of all taxes</p>
+            <hr />
+
             <div class="media_buy_now">
               <label for="Quantity">Quantity</label>
               <select name="Quantity" id="Quantity">
@@ -2077,7 +2180,6 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
             <div id="add_to_wishlist"><p>Add to Wish list</p></div>
           </div>
         </div>
-       
       </div>
 
       <p class="fridge_img_div_p">Roll over image to zoom in</p>
@@ -2140,12 +2242,12 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
               <img
                 class="h-w-100"
                 alt="Ref"
-                src="https://m.media-amazon.com/images/I/71dwW6Z3IvL._AC_UL320_.jpg"
+                src="https://a.media-amazon.com/images/I/41J7iBIDCBL._AC_UF480,480_SR480,480_.jpg"
               />
             </div>
             <p class="proName">
-              Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door
-              Refrigerator
+              Whirlpool 6 Kg 5 Star Royal Fully-Automatic Top Loading Washing
+              Machine
             </p>
             <div class="ratingDiv">
               <div>
@@ -2163,7 +2265,7 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
               <p class="offer">-27%</p>
               <div class="price_range">
                 <span class="material-symbols-outlined"> currency_rupee </span>
-                <p class="price">16,790</p>
+                <p style="font-size: 20px" class="price">₹13,790</p>
               </div>
             </div>
           </div>
@@ -2172,12 +2274,12 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
               <img
                 class="h-w-100"
                 alt="Ref"
-                src="https://m.media-amazon.com/images/I/51FJ-6IDORL._AC_UL320_.jpg"
+                src="https://a.media-amazon.com/images/I/310-ECD8XKL._AC_UF480,480_SR480,480_.jpg"
               />
             </div>
             <p class="proName">
-              Haier 165 L, 1 Star, Direct-Cool Single Door Refrigerator
-              HED-171RS-P, Red Steel
+              Whirlpool 184 L 4 Star Direct-Cool Single Door Refrigerator with
+              Intellisense Inverter
             </p>
             <div class="ratingDiv">
               <div>
@@ -2195,7 +2297,7 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
               <p class="offer">-20%</p>
               <div class="price_range">
                 <span class="material-symbols-outlined"> currency_rupee </span>
-                <p class="price">16,790</p>
+                <p style="font-size: 20px" class="price">16,790</p>
               </div>
             </div>
           </div>
@@ -2204,12 +2306,12 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
               <img
                 class="h-w-100"
                 alt="Ref"
-                src="https://m.media-amazon.com/images/I/613URtMJwZL._AC_UL320_.jpg"
+                src="https://a.media-amazon.com/images/I/41xXK32XbhL._AC_UF480,480_SR480,480_.jpg"
               />
             </div>
             <p class="proName">
-              Godrej 564 L Multi Air Flow System, Frost Free Side-By-Side
-              Refrigerator
+              Whirlpool 192 L 5 Star Icemagic Powercool Inverter Direct-Cool
+              Single Door Refrigerator
             </p>
             <div class="ratingDiv">
               <div>
@@ -2227,7 +2329,7 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
               <p class="offer">-29%</p>
               <div class="price_range">
                 <span class="material-symbols-outlined"> currency_rupee </span>
-                <p class="price">26,790</p>
+                <p style="font-size: 20px" class="price">26,790</p>
               </div>
             </div>
           </div>
@@ -2237,12 +2339,12 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
                 style="width: 100%"
                 class="h-w-100"
                 alt="Ref"
-                src="https://m.media-amazon.com/images/I/31ZknvzjEkL._AC_UF480,480_SR480,480_.jpg"
+                src="https://m.media-amazon.com/images/I/31iTk2FjQrL._AC_UF480,480_SR480,480_.jpg"
               />
             </div>
             <p class="proName">
-              Whirlpool 192 L 3 Star Vitamagic PRO Direct-Cool Single Door
-              Refrigerator 215 VITA...
+              Whirlpool 235 L 2 Star Frost Free Double Door Refrigerator (NEO
+              DF278 PRM )
             </p>
             <div class="ratingDiv">
               <div>
@@ -2259,7 +2361,7 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
               <p class="offer">-22%</p>
               <div class="price_range">
                 <span class="material-symbols-outlined"> currency_rupee </span>
-                <p class="price">16,290</p>
+                <p style="font-size: 20px" class="price">16,290</p>
               </div>
             </div>
           </div>
@@ -2268,12 +2370,12 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
               <img
                 class="h-w-100"
                 alt="Ref"
-                src="https://m.media-amazon.com/images/I/51DWwMapWxL._AC_UL320_.jpg"
+                src="https://a.media-amazon.com/images/I/415N+F5qOTL._AC_UF480,480_SR480,480_.jpg"
               />
             </div>
             <p class="proName">
-              Godrej 180 L 2 Star Advanced Capillary Technology,Single Door
-              Refrigerator
+              Whirlpool 215 L Frost Free Triple-Door Refrigerator (FP 223D
+              PROTTON ROY)
             </p>
             <div class="ratingDiv">
               <div>
@@ -2291,7 +2393,7 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
               <p class="offer">-27%</p>
               <div class="price_range">
                 <span class="material-symbols-outlined"> currency_rupee </span>
-                <p class="price">16,790</p>
+                <p style="font-size: 20px" class="price">16,790</p>
               </div>
             </div>
           </div>
@@ -2305,8 +2407,8 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
               />
             </div>
             <p class="proName">
-              Whirlpool 215 L Frost Free Triple-Door Refrigerator FP 223D
-              PROTTON ROY…
+              Whirlpool 215 L Frost Free Triple-Door Refrigerator (FP 223D
+              PROTTON ROY)
             </p>
             <div class="ratingDiv">
               <div>
@@ -2324,7 +2426,7 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
               <p class="offer">-31%</p>
               <div class="price_range">
                 <span class="material-symbols-outlined"> currency_rupee </span>
-                <p class="price">24,690</p>
+                <p style="font-size: 20px" class="price">24,690</p>
               </div>
             </div>
           </div>
@@ -2338,8 +2440,8 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
               />
             </div>
             <p class="proName">
-              Whirlpool 235 L (253D) Frost Free Triple-Door Refrigerator FP 253D
-              PROTTON ROY ART...
+              Whirlpool 235 L (253D) Frost Free Triple-Door Refrigerator (FP
+              253D PROTTON).
             </p>
             <div class="ratingDiv">
               <div>
@@ -2357,7 +2459,7 @@ Sold by       &nbsp;&nbsp;&nbsp;&nbsp;DAWNTECH
               <p class="offer">-31%</p>
               <div class="price_range">
                 <span class="material-symbols-outlined"> currency_rupee </span>
-                <p class="price">26,690</p>
+                <p style="font-size: 20px" class="price">26,690</p>
               </div>
             </div>
           </div>
