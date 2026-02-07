@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practise</title>
+    <style>
+      .image {
+        display: none;
+      }
+      @media screen and (min-width: 500px) and (max-width: 800px) {
+        #screen {
+          max-width: 100%;
+          border: 3px solid green;
+        }
+        .image {
+          display: block;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="screen">
+      <form>
+        <fieldset>
+          <legend>Login form</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name..." /><br />
+          <label for="phone">Phone:</label>
+          <input type="number" placeholder="enter your number here.." /><br />
+          <label for="email">Email:</label>
+          <input type="email" placeholder="enter your email" /><br>
+          <label for="select">Gender</label>
+          <select name="" id="select">
+            <option>male</option>
+            <option>female</option>
+            <option>prefer not to say</option>
+          </select>
+          <label for="">agree</label>
+          <input type="checkbox" name="" id="">
+        </fieldset>
+      </form>
+      <img
+        class="image"
+        src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/11/Kaneki-Ken-Featured-Image.jpg"
+      />
+    </div>
+  </body>
+</html>
